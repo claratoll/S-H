@@ -1,0 +1,478 @@
+[
+  {
+    "id": 1,
+    "name": "Styrka för Nybörjare",
+    "description": "Information om programmet",
+    "blocks": [
+      {
+        "id": 1,
+        "name": "Block 1 - Uppvärmning",
+        "workouts": [
+          {
+            "id": 1,
+            "name": "Core Uppladdning",
+            "exercises": [
+              {
+                "id": 1,
+                "name": "Plank",
+                "description": "Stärker bålen och ökar stabiliteten."
+              },
+              {
+                "id": 2,
+                "name": "Russian Twists",
+                "description": "Tränar de sneda magmusklerna."
+              },
+              {
+                "id": 3,
+                "name": "Mountain Climbers",
+                "description": "Förbättrar uthållighet och styrka i hela kroppen."
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Benstyrka",
+            "exercises": [
+              {
+                "id": 4,
+                "name": "Squats",
+                "description": "Bygger styrka i benen och förbättrar balansen."
+              },
+              {
+                "id": 5,
+                "name": "Lunges",
+                "description": "Stärker benmusklerna och förbättrar balansen."
+              },
+              {
+                "id": 6,
+                "name": "Calf Raises",
+                "description": "Fokuserar på att stärka vadmusklerna."
+              }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "Armstyrka",
+            "exercises": [
+              {
+                "id": 7,
+                "name": "Push-ups",
+                "description": "Stärker bröstet, axlarna och triceps."
+              },
+              {
+                "id": 8,
+                "name": "Tricep Dips",
+                "description": "Fokuserar på att stärka tricepsmusklerna."
+              },
+              {
+                "id": 9,
+                "name": "Bicep Curls",
+                "description": "Tränar bicepsmusklerna för ökad armstyrka."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Block 2 - Kärnstyrka",
+        "workouts": [
+          {
+            "id": 4,
+            "name": "Kärnträning Deluxe",
+            "exercises": [
+              {
+                "id": 10,
+                "name": "Dead Bug",
+                "description": "Aktiverar och stärker magmusklerna."
+              },
+              {
+                "id": 11,
+                "name": "Leg Raises",
+                "description": "Förbättrar magstyrka och stabilitet i bålen."
+              },
+              {
+                "id": 12,
+                "name": "Bird Dogs",
+                "description": "Tränar kroppens balans och stabilitet."
+              }
+            ]
+          },
+          {
+            "id": 5,
+            "name": "Ryggmuskler",
+            "exercises": [
+              {
+                "id": 13,
+                "name": "Superman",
+                "description": "Stärker ryggmusklerna och förbättrar hållningen."
+              },
+              {
+                "id": 14,
+                "name": "Back Extensions",
+                "description": "Förbättrar ryggstyrka och flexibilitet."
+              },
+              {
+                "id": 15,
+                "name": "Pull-ups",
+                "description": "Stärker övre ryggmusklerna och biceps."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Block 3 - Stretch och Avslappning",
+        "workouts": [
+          {
+            "id": 6,
+            "name": "Stretching Session",
+            "exercises": [
+              {
+                "id": 16,
+                "name": "Hamstring Stretch",
+                "description": "Förbättrar flexibiliteten i baksidan av låren."
+              },
+              {
+                "id": 17,
+                "name": "Chest Opener",
+                "description": "Öppnar upp bröstmuskulaturen för bättre hållning."
+              },
+              {
+                "id": 18,
+                "name": "Seated Forward Bend",
+                "description": "Sträcker ut ryggen och baksidan av benen."
+              }
+            ]
+          },
+          {
+            "id": 7,
+            "name": "Mindfulness Meditation",
+            "exercises": [
+              {
+                "id": 19,
+                "name": "Body Scan",
+                "description": "En guidad meditation för att öka medvetenheten om kroppen."
+              },
+              {
+                "id": 20,
+                "name": "Breathing Exercise",
+                "description": "Fokuserar på lugnande andningsövningar för avslappning."
+              },
+              {
+                "id": 21,
+                "name": "Visualisation",
+                "description": "Mentala övningar för att främja inre lugn och fokus."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "id": 2,
+    "name": "Högintensiv Konditionsträning",
+    "description": "Information om programmet",
+    "blocks": [
+      {
+        "id": 1,
+        "name": "Block 1 - Uppvärmning",
+        "workouts": [
+          {
+            "id": 1,
+            "name": "HIIT Uppvärmning",
+            "exercises": [
+              {
+                "id": 1,
+                "name": "Jumping Jacks",
+                "description": "Förbättrar cirkulationen och värmer upp kroppen."
+              },
+              {
+                "id": 2,
+                "name": "High Knees",
+                "description": "Ökar hjärtfrekvensen och förbättrar benstyrkan."
+              },
+              {
+                "id": 3,
+                "name": "Butt Kicks",
+                "description": "Väcker musklerna och ökar rörligheten i benen."
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Core Activation",
+            "exercises": [
+              {
+                "id": 4,
+                "name": "Plank Jacks",
+                "description": "Kombinerar plankan med hopp för att aktivera kärnmuskulaturen."
+              },
+              {
+                "id": 5,
+                "name": "Flutter Kicks",
+                "description": "Förbättrar magstyrka och uthållighet."
+              },
+              {
+                "id": 6,
+                "name": "Bicycle Crunches",
+                "description": "Aktiverar de sneda magmusklerna för en starkare core."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Block 2 - HIIT Träning",
+        "workouts": [
+          {
+            "id": 3,
+            "name": "Full Body Blast",
+            "exercises": [
+              {
+                "id": 7,
+                "name": "Burpees",
+                "description": "En explosiv helkroppsövning för kondition och styrka."
+              },
+              {
+                "id": 8,
+                "name": "Mountain Climbers",
+                "description": "Förbättrar uthållighet och explosivitet i kärnmuskulaturen."
+              },
+              {
+                "id": 9,
+                "name": "Squat Jumps",
+                "description": "Stärker benen och ökar hjärtfrekvensen."
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Cardio Burn",
+            "exercises": [
+              {
+                "id": 10,
+                "name": "Jump Rope",
+                "description": "En effektiv kardiovaskulär övning som bränner kalorier."
+              },
+              {
+                "id": 11,
+                "name": "Box Jumps",
+                "description": "Förbättrar benstyrka och explosivitet."
+              },
+              {
+                "id": 12,
+                "name": "Plyometric Lunges",
+                "description": "Ökar hjärtfrekvensen och förbättrar benstyrkan."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Block 3 - Nedvarvning och Stretching",
+        "workouts": [
+          {
+            "id": 5,
+            "name": "Cool Down",
+            "exercises": [
+              {
+                "id": 13,
+                "name": "Walking Lunges",
+                "description": "Hjälper till att sänka hjärtfrekvensen och sträcker ut benen."
+              },
+              {
+                "id": 14,
+                "name": "Arm Circles",
+                "description": "Minskar spänningen i axlarna och förbättrar rörligheten."
+              },
+              {
+                "id": 15,
+                "name": "Hamstring Stretch",
+                "description": "Sträcker ut baksidan av låren för att minska stelhet."
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "name": "Flexibility Focus",
+            "exercises": [
+              {
+                "id": 16,
+                "name": "Seated Forward Bend",
+                "description": "Sträcker ut ryggen och baksidan av benen."
+              },
+              {
+                "id": 17,
+                "name": "Quad Stretch",
+                "description": "Förbättrar flexibiliteten i framsidan av låren."
+              },
+              {
+                "id": 18,
+                "name": "Cobra Stretch",
+                "description": "Öppnar upp bröstmuskulaturen och förbättrar hållningen."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  {
+    "id": 3,
+    "name": "Flexibilitet och Avslappning",
+    "description": "Information om programmet",
+    "blocks": [
+      {
+        "id": 1,
+        "name": "Block 1 - Stretching",
+        "workouts": [
+          {
+            "id": 1,
+            "name": "Morgonstretch",
+            "exercises": [
+              {
+                "id": 1,
+                "name": "Nackstretch",
+                "description": "Löser upp spänningar i nacken och axlarna."
+              },
+              {
+                "id": 2,
+                "name": "Sidostretch",
+                "description": "Sträcker ut sidan av kroppen för ökad flexibilitet."
+              },
+              {
+                "id": 3,
+                "name": "Bensträck",
+                "description": "Förbättrar flexibiliteten i benen och ljumskarna."
+              }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Kvällsstretch",
+            "exercises": [
+              {
+                "id": 4,
+                "name": "Ryggradsstretch",
+                "description": "Sträcker ut ryggraden för att lindra spänningar."
+              },
+              {
+                "id": 5,
+                "name": "Höftöppnare",
+                "description": "Ökar rörligheten i höftlederna för bättre rörlighet."
+              },
+              {
+                "id": 6,
+                "name": "Armsträck",
+                "description": "Förbättrar rörligheten i axlarna och armbågarna."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 2,
+        "name": "Block 2 - Yoga och Meditation",
+        "workouts": [
+          {
+            "id": 3,
+            "name": "Yoga för Stressavlastning",
+            "exercises": [
+              {
+                "id": 7,
+                "name": "Child's Pose",
+                "description": "En avslappningsposition för att lugna sinnet och sträcka ut ryggen."
+              },
+              {
+                "id": 8,
+                "name": "Downward-Facing Dog",
+                "description": "Stärker armar och ben samtidigt som det sträcker ut hela kroppen."
+              },
+              {
+                "id": 9,
+                "name": "Seated Forward Bend",
+                "description": "Löser upp spänningar i ryggen och baksidan av benen."
+              }
+            ]
+          },
+          {
+            "id": 4,
+            "name": "Meditation och Andning",
+            "exercises": [
+              {
+                "id": 10,
+                "name": "Mindful Breathing",
+                "description": "Fokuserar på lugnande andningsövningar för att minska stress."
+              },
+              {
+                "id": 11,
+                "name": "Body Scan Meditation",
+                "description": "En guidad meditation för att öka medvetenheten om kroppen."
+              },
+              {
+                "id": 12,
+                "name": "Loving-Kindness Meditation",
+                "description": "Främjar känslor av välbefinnande och medkänsla."
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": 3,
+        "name": "Block 3 - Djupavslappning",
+        "workouts": [
+          {
+            "id": 5,
+            "name": "Guidad Avslappning",
+            "exercises": [
+              {
+                "id": 13,
+                "name": "Progressiv Muskelavslappning",
+                "description": "En avslappningsövning som minskar muskelspänningar."
+              },
+              {
+                "id": 14,
+                "name": "Visualisationsövning",
+                "description": "Mentala bilder för att främja avslappning och välbefinnande."
+              },
+              {
+                "id": 15,
+                "name": "Guidad Fantasiresa",
+                "description": "En resa genom fantasin för att slappna av och återhämta sig."
+              }
+            ]
+          },
+          {
+            "id": 6,
+            "name": "Sömnförbättring",
+            "exercises": [
+              {
+                "id": 16,
+                "name": "Progressiv Avslappning",
+                "description": "En serie avslappningsövningar för att förbättra sömnen."
+              },
+              {
+                "id": 17,
+                "name": "Andningsövningar för Sömn",
+                "description": "Lugnande andningsövningar för att främja en god nattsömn."
+              },
+              {
+                "id": 18,
+                "name": "Sömnmeditation",
+                "description": "En guidad meditation för att lugna sinnet och förbereda för sömn."
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]
