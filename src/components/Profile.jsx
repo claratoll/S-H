@@ -35,8 +35,8 @@ const Profile = () => {
         {greeting} {user ? user.name : ''}
       </h2>
       <button onClick={logOutFromFirebase}>Logga ut</button>
-      <p>Hur mår du idag?</p>
-      <p>Scrollview av alla aktiva träningsprogram</p>
+      <p className='card'>Hur mår du idag?</p>
+      <p className='card'>Scrollview av alla aktiva träningsprogram</p>
       <CalendarView />
     </div>
   );
