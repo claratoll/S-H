@@ -1,4 +1,5 @@
-import Workout from './Workout';
+/* eslint-disable react/prop-types */
+
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import images from '../assets/images.js';
