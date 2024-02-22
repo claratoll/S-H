@@ -1,10 +1,13 @@
 import { getAuth, signOut } from 'firebase/auth';
 import useUser from '../features/useUser';
 import app from '../firebase';
+import { useNavigate } from 'react-router-dom';
+
 import CalendarView from './CalendarView';
 
 const Profile = () => {
   const auth = getAuth(app);
+  const navigate = useNavigate();
   const user = useUser();
 
   const currentTime = new Date().getHours();
@@ -24,6 +27,7 @@ const Profile = () => {
     event.preventDefault();
     try {
       await signOut(auth);
+      navigate('/');
     } catch (error) {
       console.error('Fel vid utloggning:', error.message);
     }
@@ -31,13 +35,19 @@ const Profile = () => {
 
   return (
     <div>
-      <h2>
-        {greeting} {user ? user.name : ''}
-      </h2>
-      <button onClick={logOutFromFirebase}>Logga ut</button>
-      <p>Hur mår du idag?</p>
-      <p>Scrollview av alla aktiva träningsprogram</p>
-      <CalendarView />
+      {user ? (
+        <>
+          <h2>
+            {greeting} {user ? user.name : ''}
+          </h2>
+          <button onClick={logOutFromFirebase}>Logga ut</button>
+          <p>Hur mår du idag?</p>
+          <p>Scrollview av alla aktiva träningsprogram</p>
+          <CalendarView />
+        </>
+      ) : (
+        <p>Du behöver vara inloggad för att se detta.</p>
+      )}
     </div>
   );
 };

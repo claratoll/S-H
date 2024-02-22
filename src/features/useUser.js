@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { getAuth } from 'firebase/auth';
+import { getAuth, onAuthStateChanged } from 'firebase/auth';
 import app from '../firebase';
 import { doc, getDoc, getFirestore } from 'firebase/firestore';
 
@@ -26,9 +26,7 @@ const useUser = () => {
       }
     };
 
-    if (auth.currentUser) {
-      fetchUser();
-    }
+    return onAuthStateChanged(auth, fetchUser);
   }, [auth.currentUser, firestore]);
 
   return user;
