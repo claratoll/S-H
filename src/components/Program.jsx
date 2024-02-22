@@ -2,14 +2,24 @@
 
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import images from '../assets/images.js';
 
 const Program = ({ program }) => {
   const [expandedBlock, setExpandedBlock] = useState(null);
 
   return (
-    <div className='program card'>
+    <div
+      className='program card'
+      style={{
+        backgroundImage: `url(${images[program.id]})`,
+        backgroundSize: 'auto 200px',
+        backgroundRepeat: 'no-repeat',
+        backgroundPosition: 'center',
+      }}
+    >
       <h2>{program.name}</h2>
       <p>{program.description}</p>
+
       {program.blocks.map((block, index) => (
         <div key={index}>
           <h3

@@ -35,6 +35,7 @@ const Profile = () => {
 
   return (
     <div>
+
       {user ? (
         <>
           <h2>
@@ -48,6 +49,7 @@ const Profile = () => {
       ) : (
         <p>Du behöver vara inloggad för att se detta.</p>
       )}
+
     </div>
   );
 };

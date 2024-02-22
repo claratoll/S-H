@@ -20,6 +20,10 @@ const Start = () => {
           <SignUp />
         </div>
       )}
+      <p className='card'>Dagliga steg mål</p>
+      <p className='card'>Dagens träning</p>
+      <p className='card'>Veckans utmaning</p>
+      <p className='card'>Målsättning</p>
     </div>
   );
 };
