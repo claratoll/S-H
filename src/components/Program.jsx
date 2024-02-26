@@ -11,9 +11,9 @@ const Program = ({ program }) => {
     <div
       className='program card'
       style={{
-        backgroundImage: `url(${images[program.id]})`,
-        backgroundSize: 'auto 200px',
+        backgroundImage: `url(${images[program.id] || images[4]})`,
         backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
         backgroundPosition: 'center',
       }}
     >
@@ -31,13 +31,16 @@ const Program = ({ program }) => {
           </h3>
           {expandedBlock === block.id &&
             block.workouts.map((workout, index) => (
-              <Link
-                key={index}
-                to={`/programs/${program.id}/${block.id}/${workout.id}`}
-                state={{ workout }}
-              >
-                {workout.name}
-              </Link>
+              <>
+                <Link
+                  key={index}
+                  to={`/programs/${program.id}/${block.id}/${workout.id}`}
+                  state={{ workout, programId: program.id }}
+                >
+                  {workout.name}
+                </Link>
+                <br />
+              </>
             ))}
         </div>
       ))}

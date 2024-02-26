@@ -27,7 +27,7 @@ const useUser = () => {
     };
 
     return onAuthStateChanged(auth, fetchUser);
-  }, [auth.currentUser, firestore]);
+  }, [auth, auth.currentUser, firestore]);
 
   return user;
 };

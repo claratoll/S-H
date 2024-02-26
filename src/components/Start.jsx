@@ -13,6 +13,10 @@ const Start = () => {
       {user ? (
         <div>
           <p>Hej {user ? user.name : ''}</p>
+          <p className='card'>Dagliga steg mål</p>
+          <p className='card'>Dagens träning</p>
+          <p className='card'>Veckans utmaning</p>
+          <p className='card'>Målsättning</p>
         </div>
       ) : (
         <div>
@@ -20,10 +24,6 @@ const Start = () => {
           <SignUp />
         </div>
       )}
-      <p className='card'>Dagliga steg mål</p>
-      <p className='card'>Dagens träning</p>
-      <p className='card'>Veckans utmaning</p>
-      <p className='card'>Målsättning</p>
     </div>
   );
 };

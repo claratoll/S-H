@@ -15,17 +15,23 @@
               {
                 "id": 1,
                 "name": "Plank",
-                "description": "Stärker bålen och ökar stabiliteten."
+                "description": "Stärker bålen och ökar stabiliteten.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 2,
                 "name": "Russian Twists",
-                "description": "Tränar de sneda magmusklerna."
+                "description": "Tränar de sneda magmusklerna.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 3,
                 "name": "Mountain Climbers",
-                "description": "Förbättrar uthållighet och styrka i hela kroppen."
+                "description": "Förbättrar uthållighet och styrka i hela kroppen.",
+                "repetitions": 8,
+                "sets": 3
               }
             ]
           },
@@ -36,17 +42,23 @@
               {
                 "id": 4,
                 "name": "Squats",
-                "description": "Bygger styrka i benen och förbättrar balansen."
+                "description": "Bygger styrka i benen och förbättrar balansen.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 5,
                 "name": "Lunges",
-                "description": "Stärker benmusklerna och förbättrar balansen."
+                "description": "Stärker benmusklerna och förbättrar balansen.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 6,
                 "name": "Calf Raises",
-                "description": "Fokuserar på att stärka vadmusklerna."
+                "description": "Fokuserar på att stärka vadmusklerna.",
+                "repetitions": 8,
+                "sets": 3
               }
             ]
           },
@@ -57,17 +69,23 @@
               {
                 "id": 7,
                 "name": "Push-ups",
-                "description": "Stärker bröstet, axlarna och triceps."
+                "description": "Stärker bröstet, axlarna och triceps.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 8,
                 "name": "Tricep Dips",
-                "description": "Fokuserar på att stärka tricepsmusklerna."
+                "description": "Fokuserar på att stärka tricepsmusklerna.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 9,
                 "name": "Bicep Curls",
-                "description": "Tränar bicepsmusklerna för ökad armstyrka."
+                "description": "Tränar bicepsmusklerna för ökad armstyrka.",
+                "repetitions": 8,
+                "sets": 3
               }
             ]
           }
@@ -84,17 +102,23 @@
               {
                 "id": 10,
                 "name": "Dead Bug",
-                "description": "Aktiverar och stärker magmusklerna."
+                "description": "Aktiverar och stärker magmusklerna.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 11,
                 "name": "Leg Raises",
-                "description": "Förbättrar magstyrka och stabilitet i bålen."
+                "description": "Förbättrar magstyrka och stabilitet i bålen.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 12,
                 "name": "Bird Dogs",
-                "description": "Tränar kroppens balans och stabilitet."
+                "description": "Tränar kroppens balans och stabilitet.",
+                "repetitions": 8,
+                "sets": 3
               }
             ]
           },
@@ -105,17 +129,23 @@
               {
                 "id": 13,
                 "name": "Superman",
-                "description": "Stärker ryggmusklerna och förbättrar hållningen."
+                "description": "Stärker ryggmusklerna och förbättrar hållningen.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 14,
                 "name": "Back Extensions",
-                "description": "Förbättrar ryggstyrka och flexibilitet."
+                "description": "Förbättrar ryggstyrka och flexibilitet.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 15,
                 "name": "Pull-ups",
-                "description": "Stärker övre ryggmusklerna och biceps."
+                "description": "Stärker övre ryggmusklerna och biceps.",
+                "repetitions": 8,
+                "sets": 3
               }
             ]
           }
@@ -132,17 +162,23 @@
               {
                 "id": 16,
                 "name": "Hamstring Stretch",
-                "description": "Förbättrar flexibiliteten i baksidan av låren."
+                "description": "Förbättrar flexibiliteten i baksidan av låren.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 17,
                 "name": "Chest Opener",
-                "description": "Öppnar upp bröstmuskulaturen för bättre hållning."
+                "description": "Öppnar upp bröstmuskulaturen för bättre hållning.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 18,
                 "name": "Seated Forward Bend",
-                "description": "Sträcker ut ryggen och baksidan av benen."
+                "description": "Sträcker ut ryggen och baksidan av benen.",
+                "repetitions": 8,
+                "sets": 3
               }
             ]
           },
@@ -153,17 +189,23 @@
               {
                 "id": 19,
                 "name": "Body Scan",
-                "description": "En guidad meditation för att öka medvetenheten om kroppen."
+                "description": "En guidad meditation för att öka medvetenheten om kroppen.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 20,
                 "name": "Breathing Exercise",
-                "description": "Fokuserar på lugnande andningsövningar för avslappning."
+                "description": "Fokuserar på lugnande andningsövningar för avslappning.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 21,
                 "name": "Visualisation",
-                "description": "Mentala övningar för att främja inre lugn och fokus."
+                "description": "Mentala övningar för att främja inre lugn och fokus.",
+                "repetitions": 8,
+                "sets": 3
               }
             ]
           }
@@ -188,17 +230,23 @@
               {
                 "id": 1,
                 "name": "Jumping Jacks",
-                "description": "Förbättrar cirkulationen och värmer upp kroppen."
+                "description": "Förbättrar cirkulationen och värmer upp kroppen.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 2,
                 "name": "High Knees",
-                "description": "Ökar hjärtfrekvensen och förbättrar benstyrkan."
+                "description": "Ökar hjärtfrekvensen och förbättrar benstyrkan.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 3,
                 "name": "Butt Kicks",
-                "description": "Väcker musklerna och ökar rörligheten i benen."
+                "description": "Väcker musklerna och ökar rörligheten i benen.",
+                "repetitions": 8,
+                "sets": 3
               }
             ]
           },
@@ -209,17 +257,23 @@
               {
                 "id": 4,
                 "name": "Plank Jacks",
-                "description": "Kombinerar plankan med hopp för att aktivera kärnmuskulaturen."
+                "description": "Kombinerar plankan med hopp för att aktivera kärnmuskulaturen.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 5,
                 "name": "Flutter Kicks",
-                "description": "Förbättrar magstyrka och uthållighet."
+                "description": "Förbättrar magstyrka och uthållighet.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 6,
                 "name": "Bicycle Crunches",
-                "description": "Aktiverar de sneda magmusklerna för en starkare core."
+                "description": "Aktiverar de sneda magmusklerna för en starkare core.",
+                "repetitions": 8,
+                "sets": 3
               }
             ]
           }
@@ -236,17 +290,23 @@
               {
                 "id": 7,
                 "name": "Burpees",
-                "description": "En explosiv helkroppsövning för kondition och styrka."
+                "description": "En explosiv helkroppsövning för kondition och styrka.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 8,
                 "name": "Mountain Climbers",
-                "description": "Förbättrar uthållighet och explosivitet i kärnmuskulaturen."
+                "description": "Förbättrar uthållighet och explosivitet i kärnmuskulaturen.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 9,
                 "name": "Squat Jumps",
-                "description": "Stärker benen och ökar hjärtfrekvensen."
+                "description": "Stärker benen och ökar hjärtfrekvensen.",
+                "repetitions": 8,
+                "sets": 3
               }
             ]
           },
@@ -257,17 +317,23 @@
               {
                 "id": 10,
                 "name": "Jump Rope",
-                "description": "En effektiv kardiovaskulär övning som bränner kalorier."
+                "description": "En effektiv kardiovaskulär övning som bränner kalorier.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 11,
                 "name": "Box Jumps",
-                "description": "Förbättrar benstyrka och explosivitet."
+                "description": "Förbättrar benstyrka och explosivitet.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 12,
                 "name": "Plyometric Lunges",
-                "description": "Ökar hjärtfrekvensen och förbättrar benstyrkan."
+                "description": "Ökar hjärtfrekvensen och förbättrar benstyrkan.",
+                "repetitions": 8,
+                "sets": 3
               }
             ]
           }
@@ -284,17 +350,23 @@
               {
                 "id": 13,
                 "name": "Walking Lunges",
-                "description": "Hjälper till att sänka hjärtfrekvensen och sträcker ut benen."
+                "description": "Hjälper till att sänka hjärtfrekvensen och sträcker ut benen.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 14,
                 "name": "Arm Circles",
-                "description": "Minskar spänningen i axlarna och förbättrar rörligheten."
+                "description": "Minskar spänningen i axlarna och förbättrar rörligheten.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 15,
                 "name": "Hamstring Stretch",
-                "description": "Sträcker ut baksidan av låren för att minska stelhet."
+                "description": "Sträcker ut baksidan av låren för att minska stelhet.",
+                "repetitions": 8,
+                "sets": 3
               }
             ]
           },
@@ -305,17 +377,23 @@
               {
                 "id": 16,
                 "name": "Seated Forward Bend",
-                "description": "Sträcker ut ryggen och baksidan av benen."
+                "description": "Sträcker ut ryggen och baksidan av benen.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 17,
                 "name": "Quad Stretch",
-                "description": "Förbättrar flexibiliteten i framsidan av låren."
+                "description": "Förbättrar flexibiliteten i framsidan av låren.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 18,
                 "name": "Cobra Stretch",
-                "description": "Öppnar upp bröstmuskulaturen och förbättrar hållningen."
+                "description": "Öppnar upp bröstmuskulaturen och förbättrar hållningen.",
+                "repetitions": 8,
+                "sets": 3
               }
             ]
           }
@@ -340,17 +418,23 @@
               {
                 "id": 1,
                 "name": "Nackstretch",
-                "description": "Löser upp spänningar i nacken och axlarna."
+                "description": "Löser upp spänningar i nacken och axlarna.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 2,
                 "name": "Sidostretch",
-                "description": "Sträcker ut sidan av kroppen för ökad flexibilitet."
+                "description": "Sträcker ut sidan av kroppen för ökad flexibilitet.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 3,
                 "name": "Bensträck",
-                "description": "Förbättrar flexibiliteten i benen och ljumskarna."
+                "description": "Förbättrar flexibiliteten i benen och ljumskarna.",
+                "repetitions": 8,
+                "sets": 3
               }
             ]
           },
@@ -361,17 +445,23 @@
               {
                 "id": 4,
                 "name": "Ryggradsstretch",
-                "description": "Sträcker ut ryggraden för att lindra spänningar."
+                "description": "Sträcker ut ryggraden för att lindra spänningar.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 5,
                 "name": "Höftöppnare",
-                "description": "Ökar rörligheten i höftlederna för bättre rörlighet."
+                "description": "Ökar rörligheten i höftlederna för bättre rörlighet.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 6,
                 "name": "Armsträck",
-                "description": "Förbättrar rörligheten i axlarna och armbågarna."
+                "description": "Förbättrar rörligheten i axlarna och armbågarna.",
+                "repetitions": 8,
+                "sets": 3
               }
             ]
           }
@@ -388,17 +478,23 @@
               {
                 "id": 7,
                 "name": "Child's Pose",
-                "description": "En avslappningsposition för att lugna sinnet och sträcka ut ryggen."
+                "description": "En avslappningsposition för att lugna sinnet och sträcka ut ryggen.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 8,
                 "name": "Downward-Facing Dog",
-                "description": "Stärker armar och ben samtidigt som det sträcker ut hela kroppen."
+                "description": "Stärker armar och ben samtidigt som det sträcker ut hela kroppen.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 9,
                 "name": "Seated Forward Bend",
-                "description": "Löser upp spänningar i ryggen och baksidan av benen."
+                "description": "Löser upp spänningar i ryggen och baksidan av benen.",
+                "repetitions": 8,
+                "sets": 3
               }
             ]
           },
@@ -409,17 +505,23 @@
               {
                 "id": 10,
                 "name": "Mindful Breathing",
-                "description": "Fokuserar på lugnande andningsövningar för att minska stress."
+                "description": "Fokuserar på lugnande andningsövningar för att minska stress.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 11,
                 "name": "Body Scan Meditation",
-                "description": "En guidad meditation för att öka medvetenheten om kroppen."
+                "description": "En guidad meditation för att öka medvetenheten om kroppen.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 12,
                 "name": "Loving-Kindness Meditation",
-                "description": "Främjar känslor av välbefinnande och medkänsla."
+                "description": "Främjar känslor av välbefinnande och medkänsla.",
+                "repetitions": 8,
+                "sets": 3
               }
             ]
           }
@@ -436,17 +538,23 @@
               {
                 "id": 13,
                 "name": "Progressiv Muskelavslappning",
-                "description": "En avslappningsövning som minskar muskelspänningar."
+                "description": "En avslappningsövning som minskar muskelspänningar.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 14,
                 "name": "Visualisationsövning",
-                "description": "Mentala bilder för att främja avslappning och välbefinnande."
+                "description": "Mentala bilder för att främja avslappning och välbefinnande.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 15,
                 "name": "Guidad Fantasiresa",
-                "description": "En resa genom fantasin för att slappna av och återhämta sig."
+                "description": "En resa genom fantasin för att slappna av och återhämta sig.",
+                "repetitions": 8,
+                "sets": 3
               }
             ]
           },
@@ -457,17 +565,23 @@
               {
                 "id": 16,
                 "name": "Progressiv Avslappning",
-                "description": "En serie avslappningsövningar för att förbättra sömnen."
+                "description": "En serie avslappningsövningar för att förbättra sömnen.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 17,
                 "name": "Andningsövningar för Sömn",
-                "description": "Lugnande andningsövningar för att främja en god nattsömn."
+                "description": "Lugnande andningsövningar för att främja en god nattsömn.",
+                "repetitions": 8,
+                "sets": 3
               },
               {
                 "id": 18,
                 "name": "Sömnmeditation",
-                "description": "En guidad meditation för att lugna sinnet och förbereda för sömn."
+                "description": "En guidad meditation för att lugna sinnet och förbereda för sömn.",
+                "repetitions": 8,
+                "sets": 3
               }
             ]
           }
