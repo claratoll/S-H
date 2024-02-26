@@ -3,7 +3,7 @@ import useUser from '../features/useUser';
 import { useState, useEffect } from 'react';
 import { getFirestore } from 'firebase/firestore';
 import app from '../firebase';
-import { collection, query, where, onSnapshot } from 'firebase/firestore';
+import { collection, query, onSnapshot } from 'firebase/firestore';
 import { isSameDay } from 'date-fns';
 
 const CalendarView = () => {
@@ -13,7 +13,7 @@ const CalendarView = () => {
   const [events, setEvents] = useState([]);
   const [selectedDateEvent, setSelectedDateEvent] = useState([]);
 
-  const handleDayClick = (value, event) => {
+  const handleDayClick = (value) => {
     console.log('Selected date:', value);
     setSelectedDate(value);
   };

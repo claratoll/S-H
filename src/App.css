@@ -1,6 +1,12 @@
+body,
+#root {
+  margin: 0;
+  padding: 0;
+}
+
 #root {
   text-align: center;
-
+  min-height: 100vh;
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
@@ -26,23 +32,48 @@
     color: #071108;
   }
 
-  .card {
-    background-color: #faa275;
+  a {
+    color: #5e0b15;
+  }
+
+  a:hover {
+    color: #bc4749;
   }
 
   ul {
     background-color: #bc4749;
   }
 
-  .burger {
+  button {
+    color: #efe9e7;
     background-color: #5e0b15;
+  }
+
+  button:hover {
+    background-color: #bc4749;
   }
 
   .has-event {
     background-color: #faa275;
   }
-  button:hover {
-    background-color: #bc4749;
+
+  .card {
+    background-color: #faa275;
+  }
+
+  .program h1,
+  .program h2,
+  .program h3,
+  .program h4,
+  .program p {
+    color: #efe9e7;
+  }
+
+  .program a {
+    color: #c598af;
+  }
+  .burger {
+    background-color: #5e0b15;
   }
 }
 
@@ -59,12 +90,20 @@
     color: #efe9e7;
   }
 
-  .card {
-    background-color: #5e0b15;
+  a {
+    color: #c598af;
+  }
+
+  a:hover {
+    color: #a2a7a9;
   }
 
   ul {
     color: #bc4749;
+    background-color: #5e0b15;
+  }
+
+  .card {
     background-color: #5e0b15;
   }
 
@@ -75,7 +114,7 @@
   .has-event {
     background-color: #c598af;
   }
-  .has-event button:hover {
+  button:hover {
     background-color: #4a1942;
   }
 }
@@ -93,10 +132,6 @@ h2 {
 a {
   font-weight: 500;
   text-decoration: inherit;
-}
-
-a:hover {
-  color: #535bf2;
 }
 
 button {
@@ -128,6 +163,8 @@ ul {
   justify-content: space-evenly;
   padding: 15px;
   box-shadow: 0 0 5px #000;
+  border-top: none;
+  margin-top: 0;
 }
 
 .hamburger {
@@ -146,6 +183,28 @@ ul {
   border-radius: 10px;
   transform-origin: 1px;
   transition: all 0.3s linear;
+}
+
+.workoutcard {
+  display: flex;
+  flex-direction: row;
+  margin: 20px;
+}
+.workoutcard p {
+  margin: 0;
+}
+
+.workoutcard p:first-child {
+  flex: 0 0 50%; /* Fast bredd på 50% för första kolumnen */
+}
+
+.instruction {
+  flex: 0 0 50%; /* Fast bredd på 50% för andra kolumnen */
+}
+
+.imgarrow {
+  width: 20px;
+  height: auto;
 }
 
 @media (max-width: 600px) {
@@ -173,13 +232,21 @@ ul {
 
   .hamburger {
     display: flex;
-    padding-top: 10px;
-    margin-left: 10px;
     z-index: 10;
   }
 }
 
 @media (min-width: 601px) and (max-width: 999px) {
+  h1 {
+    font-size: 2em;
+  }
+
+  h2 {
+    font-size: 1.7em;
+  }
+}
+
+@media (min-width: 1000px) {
   h1 {
     font-size: 2em;
   }
