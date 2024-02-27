@@ -15,6 +15,14 @@ const Workout = () => {
   );
   const [savedToFirebase, setSavedToFirebase] = useState('');
   const [userWorkoutInfo, setUserWorkoutInfo] = useState('');
+  const [weightsValues, setWeightsValues] = useState(
+    workout.exercises.map((exercise) => Array(exercise.sets).fill(0))
+  );
+  const [repsValues, setRepsValues] = useState(
+    workout.exercises.map((exercise) =>
+      Array(exercise.sets).fill(exercise.repetitions)
+    )
+  );
 
   const handleInfoClick = (index) => {
     const newShowInfo = [...showInfo];
@@ -22,16 +30,19 @@ const Workout = () => {
     setShowInfo(newShowInfo);
   };
 
-  const [repsValues, setRepsValues] = useState(
-    workout.exercises.map((exercise) =>
-      Array(exercise.sets).fill(exercise.repetitions)
-    )
-  );
-
   const handleRepsChange = (exerciseIndex, setIndex, event) => {
-    const newRepsValues = [...repsValues];
-    newRepsValues[exerciseIndex][setIndex] = Number(event.target.value);
-    setRepsValues(newRepsValues);
+    const { name, value } = event.target;
+    const newValue = Number(value);
+
+    if (name.startsWith('reps')) {
+      const newRepsValues = [...repsValues];
+      newRepsValues[exerciseIndex][setIndex] = newValue;
+      setRepsValues(newRepsValues);
+    } else if (name.startsWith('weight')) {
+      const newWeightsValues = [...weightsValues];
+      newWeightsValues[exerciseIndex][setIndex] = newValue;
+      setWeightsValues(newWeightsValues);
+    }
   };
 
   const handleUpdateData = async () => {
@@ -39,6 +50,7 @@ const Workout = () => {
       const exercisesData = repsValues.map((exerciseReps, index) => ({
         exerciseID: workout.exercises[index].id,
         repetitions: exerciseReps,
+        weights: weightsValues[index],
       }));
 
       await updateData(
@@ -76,7 +88,7 @@ const Workout = () => {
                 <div className='instruction'>
                   <div>
                     <p>
-                      {exercise.description}
+                      {exercise.name}
                       <img
                         src={arrowDown}
                         alt='arrow down'
@@ -98,7 +110,17 @@ const Workout = () => {
                           onChange={(event) =>
                             handleRepsChange(index, setIndex, event)
                           }
-                        />
+                        />{' '}
+                        x{' '}
+                        <input
+                          type='number'
+                          name={`weight_${exercise.id}_${setIndex}`}
+                          value={weightsValues[index][setIndex] || ''}
+                          onChange={(event) =>
+                            handleRepsChange(index, setIndex, event)
+                          }
+                        />{' '}
+                        kg
                         <br />
                       </React.Fragment>
                     ))}

@@ -57,6 +57,10 @@ body,
     background-color: #faa275;
   }
 
+  .react-calendar__month-view__days__day--neighboringMonth {
+    opacity: 0.7;
+  }
+
   .card {
     background-color: #faa275;
   }
@@ -69,9 +73,14 @@ body,
     color: #efe9e7;
   }
 
+  .workoutcard .program {
+    color: #efe9e7;
+  }
+
   .program a {
     color: #c598af;
   }
+
   .burger {
     background-color: #5e0b15;
   }
@@ -110,12 +119,16 @@ body,
   .burger {
     background-color: #bc4749;
   }
+  button:hover {
+    background-color: #4a1942;
+  }
 
   .has-event {
     background-color: #c598af;
   }
-  button:hover {
-    background-color: #4a1942;
+
+  .react-calendar__month-view__days__day--neighboringMonth {
+    opacity: 0.5;
   }
 }
 
@@ -205,6 +218,12 @@ ul {
 .imgarrow {
   width: 20px;
   height: auto;
+}
+
+.workoutcard input[type='number'] {
+  max-width: 50px;
+  padding: 3px;
+  margin: 2px;
 }
 
 @media (max-width: 600px) {
