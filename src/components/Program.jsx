@@ -30,17 +30,16 @@ const Program = ({ program }) => {
             {block.name}
           </h3>
           {expandedBlock === block.id &&
-            block.workouts.map((workout, index) => (
-              <>
+            block.workouts.map((workout) => (
+              <div key={workout.id}>
                 <Link
-                  key={index}
                   to={`/programs/${program.id}/${block.id}/${workout.id}`}
                   state={{ workout, programId: program.id }}
                 >
                   {workout.name}
                 </Link>
                 <br />
-              </>
+              </div>
             ))}
         </div>
       ))}
