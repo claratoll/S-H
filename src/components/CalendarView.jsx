@@ -71,6 +71,7 @@ const CalendarView = () => {
         allEventsUnsubscribe();
       };
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [user]);
 
   return (
@@ -81,6 +82,11 @@ const CalendarView = () => {
           <div key={index}>
             <p>{event.title}</p>
             <p>{event.info}</p>
+            {event.programId && (
+              <p>
+                Träningsprogram: {event.programId} & pass {event.workoutId}
+              </p>
+            )}
           </div>
         ))
       ) : (

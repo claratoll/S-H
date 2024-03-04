@@ -129,15 +129,14 @@
                 "id": 13,
                 "name": "Superman",
                 "description": "Stärker ryggmusklerna och förbättrar hållningen.",
-                "repetitions": [8, 8, 8],
-                "weights": [10, 12, 10]
+                "repetitions": [8, 8, 8]
               },
               {
                 "id": 14,
                 "name": "Back Extensions",
                 "description": "Förbättrar ryggstyrka och flexibilitet.",
-                "repetitions": [8, 8, 8],
-                "weights": [10, 12, 10]
+                "repetitions": [8, 8],
+                "weights": [10, 12]
               },
               {
                 "id": 15,

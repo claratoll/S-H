@@ -50,6 +50,7 @@ const Workout = () => {
       await updateData(
         programId.toString(),
         workout.id.toString(),
+        workout.name,
         exercisesData
       );
 
@@ -72,7 +73,7 @@ const Workout = () => {
           console.log('data is:', data);
 
           // För varje övning, hämta repetitions- och viktvärden
-          const repsValuesArray = workout.exercises.map((exercise, index) => {
+          const repsValuesArray = workout.exercises.map((exercise) => {
             // Kontrollera om det finns data för den här övningen
             const exerciseData = exercisesData.find(
               (data) => data.exerciseID === exercise.id
@@ -86,19 +87,17 @@ const Workout = () => {
             }
           });
 
-          const weightsValuesArray = workout.exercises.map(
-            (exercise, index) => {
-              const exerciseData = exercisesData.find(
-                (data) => data.exerciseID === exercise.id
-              );
+          const weightsValuesArray = workout.exercises.map((exercise) => {
+            const exerciseData = exercisesData.find(
+              (data) => data.exerciseID === exercise.id
+            );
 
-              if (exerciseData && exerciseData.weights) {
-                return exerciseData.weights.map((weight) => Number(weight));
-              } else {
-                return Array(exercise.weights.length).fill(0);
-              }
+            if (exerciseData && exerciseData.weights) {
+              return exerciseData.weights.map((weight) => Number(weight));
+            } else {
+              return Array(exercise.weights.length).fill(0);
             }
-          );
+          });
 
           setRepsValues(repsValuesArray);
           setWeightsValues(weightsValuesArray);

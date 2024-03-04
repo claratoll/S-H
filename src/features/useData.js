@@ -30,7 +30,7 @@ const useData = () => {
     }
   };
 
-  const updateData = async (programId, workoutId, data) => {
+  const updateData = async (programId, workoutId, name, data) => {
     if (!auth.currentUser) {
       console.error('No user is currently signed in');
       return;
@@ -40,6 +40,8 @@ const useData = () => {
       ...data,
       date: new Date(),
     };
+
+    const docId = `${programId}-workouts-${workoutId}`;
 
     const docRef = doc(
       firestore,
@@ -51,7 +53,23 @@ const useData = () => {
       workoutId
     );
 
+    const saveToCalendarDocRef = doc(
+      firestore,
+      'users',
+      auth.currentUser.uid,
+      'calendar',
+      docId
+    );
+
+    const calendarData = {
+      date: new Date(),
+      workoutId: workoutId,
+      programId: programId,
+      title: name,
+    };
+
     await setDoc(docRef, dataWithDate, { merge: true });
+    await setDoc(saveToCalendarDocRef, calendarData, { merge: true });
   };
 
   return { getData, updateData };
