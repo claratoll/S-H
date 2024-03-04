@@ -166,7 +166,8 @@ button:focus-visible {
 .card {
   margin: 1em;
   padding: 1em;
-  border: 1px solid black;
+  border: 1px solid rgba(126, 8, 8, 0.8);
+  box-shadow: 0 4px 8px rgba(126, 8, 8, 0.4);
 }
 
 ul {
@@ -224,6 +225,17 @@ ul {
   max-width: 50px;
   padding: 3px;
   margin: 2px;
+}
+
+.circleprogress {
+  max-height: 100px;
+  max-width: 100px;
+}
+
+.step {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 @media (max-width: 600px) {
