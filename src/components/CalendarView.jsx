@@ -81,6 +81,7 @@ const CalendarView = () => {
         selectedDateEvent.map((event, index) => (
           <div key={index}>
             <p>{event.title}</p>
+            {event.steps && <p>{event.steps} steg idag.</p>}
             <p>{event.info}</p>
             {event.programId && (
               <p>
