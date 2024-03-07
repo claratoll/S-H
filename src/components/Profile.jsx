@@ -2,14 +2,17 @@ import { getAuth, signOut } from 'firebase/auth';
 import useUser from '../features/useUser';
 import app from '../firebase';
 import { useNavigate } from 'react-router-dom';
-
 import CalendarView from './CalendarView';
+import PremiumPayment from '../payments/PremiumPayment';
+import ManageSubscription from '../payments/ManageSubscription';
+
+import usePremium from '../features/usePremium';
 
 const Profile = () => {
   const auth = getAuth(app);
   const navigate = useNavigate();
   const user = useUser();
-
+  const isUserPremium = usePremium();
   const currentTime = new Date().getHours();
   let greeting;
 
@@ -35,13 +38,27 @@ const Profile = () => {
 
   return (
     <div>
-
       {user ? (
         <>
           <h2>
             {greeting} {user ? user.name : ''}
           </h2>
           <button onClick={logOutFromFirebase}>Logga ut</button>
+
+          <div className='card'>
+            <p>din medlemskapsstatus är </p>
+            {!isUserPremium ? (
+              <div>
+                <p>Basic</p>
+                <PremiumPayment />
+              </div>
+            ) : (
+              <div>
+                <p>Premium</p>
+                <ManageSubscription />
+              </div>
+            )}
+          </div>
           <p>Hur mår du idag?</p>
           <p>Scrollview av alla aktiva träningsprogram</p>
           <CalendarView />
@@ -49,7 +66,6 @@ const Profile = () => {
       ) : (
         <p>Du behöver vara inloggad för att se detta.</p>
       )}
-
     </div>
   );
 };
