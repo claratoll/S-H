@@ -166,8 +166,8 @@ button:focus-visible {
 .card {
   margin: 1em;
   padding: 1em;
-  border: 1px solid rgba(126, 8, 8, 0.8);
-  box-shadow: 0 4px 8px rgba(126, 8, 8, 0.4);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 ul {
@@ -212,6 +212,10 @@ ul {
   flex: 0 0 50%; /* Fast bredd på 50% för första kolumnen */
 }
 
+.workoutcard img {
+  height: 250px;
+}
+
 .instruction {
   flex: 0 0 50%; /* Fast bredd på 50% för andra kolumnen */
 }
@@ -236,6 +240,26 @@ ul {
   display: flex;
   justify-content: space-around;
   align-items: center;
+}
+
+.nextworkout-container {
+  margin: 10px;
+  display: flex;
+  flex-direction: row;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+}
+
+.nextworkout {
+  flex: 0 0 auto;
+  margin-right: 15px;
+  scroll-snap-align: start;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+.nextworkout h3 {
+  padding: 30px;
 }
 
 @media (max-width: 600px) {
@@ -275,6 +299,14 @@ ul {
   h2 {
     font-size: 1.7em;
   }
+
+  .nextworkout-container {
+    justify-content: center;
+  }
+
+  .nextworkout h3 {
+    padding: 50px;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -284,5 +316,12 @@ ul {
 
   h2 {
     font-size: 1.7em;
+  }
+
+  .nextworkout h3 {
+    padding: 70px;
+  }
+  .nextworkout-container {
+    justify-content: center;
   }
 }

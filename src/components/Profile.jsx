@@ -5,7 +5,6 @@ import { useNavigate } from 'react-router-dom';
 import CalendarView from './CalendarView';
 import PremiumPayment from '../payments/PremiumPayment';
 import ManageSubscription from '../payments/ManageSubscription';
-
 import usePremium from '../features/usePremium';
 
 const Profile = () => {
