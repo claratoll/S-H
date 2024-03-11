@@ -87,9 +87,24 @@ const useData = () => {
   };
 
   const getData = async (programId, workoutId) => {
+    let isActive = false;
     if (!auth.currentUser) {
       console.error('No user is currently signed in');
       return null;
+    }
+
+    const activeProgram = doc(
+      firestore,
+      'users',
+      auth.currentUser.uid,
+      'programs',
+      programId
+    );
+
+    const activeDocSnap = await getDoc(activeProgram);
+    if (activeDocSnap.exists()) {
+      const activeData = activeDocSnap.data();
+      isActive = activeData.active;
     }
 
     const docRef = doc(
@@ -105,8 +120,9 @@ const useData = () => {
     const docSnap = await getDoc(docRef);
     if (docSnap.exists()) {
       return docSnap.data();
+      //  return docSnap.data(), isActive;
     } else {
-      return null;
+      return { isActive };
     }
   };
 

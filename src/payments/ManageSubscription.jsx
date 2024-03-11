@@ -1,12 +1,6 @@
-import { getAuth } from 'firebase/auth';
 import { useState } from 'react';
-import app from '../firebase';
-import { getFirestore } from 'firebase/firestore';
 
 const ManageSubscription = () => {
-  const auth = getAuth(app);
-
-  const db = getFirestore(app);
   const [showOptions, setShowOptions] = useState(false);
 
   const handleDeleteAccount = () => {
