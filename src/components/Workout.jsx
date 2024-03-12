@@ -1,9 +1,12 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import React, { useState, useEffect } from 'react';
 import { useLocation } from 'react-router-dom';
 import useUser from '../features/useUser';
 import useData from '../features/useData';
 import images from '../assets/images.js';
 import arrowDown from '../assets/arrowdown.png';
+import addImg from '../assets/add.png';
+import deleteImg from '../assets/delete.png';
 
 const Workout = () => {
   const location = useLocation();
@@ -23,6 +26,10 @@ const Workout = () => {
     newShowInfo[index] = !newShowInfo[index];
     setShowInfo(newShowInfo);
   };
+
+  const handleAddRowClick = () => {};
+
+  const handleDeleteRowClick = () => {};
 
   const handleInputChange = (exerciseIndex, setIndex, event) => {
     const { name, value } = event.target;
@@ -65,7 +72,7 @@ const Workout = () => {
       try {
         const data = await getData(programId.toString(), workout.id.toString());
 
-        if (data) {
+        if (data && !(Object.keys(data).length === 1 && 'isActive' in data)) {
           setUserWorkoutInfo(
             'Du har redan kört det här träningspasset en gång och du ser dina tidigare vikter och repetitioner nedan. Vill du köra det igen går det bra såklart, då uppdateras bara din gamla registrering med din nya.'
           );
@@ -101,7 +108,7 @@ const Workout = () => {
 
           setRepsValues(repsValuesArray);
           setWeightsValues(weightsValuesArray);
-        } else {
+        } else if (data && 'isActive' in data) {
           const exerciseRepsValues = workout.exercises.map((exercise) =>
             Array(exercise.repetitions.length)
               .fill(0)
@@ -148,7 +155,7 @@ const Workout = () => {
                 <div className='instruction'>
                   <div>
                     <p>
-                      {exercise.name}
+                      {exercise.name}{' '}
                       <img
                         src={arrowDown}
                         alt='arrow down'
@@ -161,48 +168,62 @@ const Workout = () => {
                   <p>
                     Antal repetitioner:
                     <br />
-                    {repsValues[index].map((reps, setIndex) => (
-                      <React.Fragment key={setIndex}>
-                        <input
-                          type='number'
-                          key={`reps_${exercise.id}_${setIndex}`}
-                          name={`reps_${exercise.id}_${setIndex}`}
-                          value={
-                            repsValues[index] && repsValues[index][setIndex]
-                              ? repsValues[index][setIndex] || ''
-                              : ''
-                          }
-                          onChange={(event) =>
-                            handleInputChange(index, setIndex, event)
-                          }
-                        />{' '}
-                        {weightsValues[index] &&
-                          !weightsValues[index].every(
-                            (weight) => weight === 0
-                          ) && (
-                            <React.Fragment>
-                              x{' '}
-                              <input
-                                type='number'
-                                key={`weight_${exercise.id}_${setIndex}`}
-                                name={`weight_${exercise.id}_${setIndex}`}
-                                value={
-                                  weightsValues[index] &&
-                                  weightsValues[index][setIndex]
-                                    ? weightsValues[index][setIndex] || ''
-                                    : ''
-                                }
-                                onChange={(event) =>
-                                  handleInputChange(index, setIndex, event)
-                                }
-                              />{' '}
-                              kg
-                            </React.Fragment>
-                          )}
-                        <br />
-                      </React.Fragment>
-                    ))}
+                    {repsValues[index] &&
+                      repsValues[index].length > 0 &&
+                      repsValues[index].map((reps, setIndex) => (
+                        <React.Fragment key={setIndex}>
+                          <input
+                            type='number'
+                            key={`reps_${exercise.id}_${setIndex}`}
+                            name={`reps_${exercise.id}_${setIndex}`}
+                            value={
+                              repsValues[index] && repsValues[index][setIndex]
+                                ? repsValues[index][setIndex] || ''
+                                : ''
+                            }
+                            onChange={(event) =>
+                              handleInputChange(index, setIndex, event)
+                            }
+                          />{' '}
+                          {weightsValues[index] &&
+                            !weightsValues[index].every(
+                              (weight) => weight === 0
+                            ) && (
+                              <React.Fragment>
+                                x{' '}
+                                <input
+                                  type='number'
+                                  key={`weight_${exercise.id}_${setIndex}`}
+                                  name={`weight_${exercise.id}_${setIndex}`}
+                                  value={
+                                    weightsValues[index] &&
+                                    weightsValues[index][setIndex]
+                                      ? weightsValues[index][setIndex] || ''
+                                      : ''
+                                  }
+                                  onChange={(event) =>
+                                    handleInputChange(index, setIndex, event)
+                                  }
+                                />{' '}
+                                kg
+                              </React.Fragment>
+                            )}{' '}
+                          <img
+                            src={deleteImg}
+                            alt='delete row button'
+                            className='imgarrow'
+                            onClick={() => handleDeleteRowClick()}
+                          />
+                          <br />
+                        </React.Fragment>
+                      ))}
                   </p>
+                  <img
+                    src={addImg}
+                    alt='add row button'
+                    className='imgarrow'
+                    onClick={() => handleAddRowClick()}
+                  />
                 </div>
               </div>
             );

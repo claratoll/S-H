@@ -1,0 +1,412 @@
+[
+  {
+    "name": "Lift like fall",
+    "id": "g1",
+    "description": "Varmt välkommen till det här korta men intensiva programmet för dig som vill kicka igång hösten tillsammans med mig! Under tre veckor kör vi 3 pass per vecka som tar ungefär 30 minuter att genomföra (lite beroende på hur tunga vikter du tar och hur mycket vila du behöver mellan seten), så 9 pass för att sätta fart på hösten och komma igång igen helt enkelt! Det här programmet fungerar att köra både på gym och hemma, för det enda du behöver är ett par hantlar eller kettlebells. Ju fler desto enklare att variera för de olika övningarna såklart, men det går att köra alla övningar med en enda hantel.",
+    "time": "3 weeks",
+    "recommendations": "Det här programmet är för dig som vill träna 30 minuter per vecka x 3 pass. Du behöver ha lite koll på hantlar och kettlebells sen tidigare, har du inte det rekommenderar jag Get started at home, Get started eller Välkommen in på gymmet – programmen. Det här programmet är för dig som vill kicka igång hösten och köra ett kort och intensivt träningsprogram för att komma igång igen!",
+    "category": "beginner",
+    "tags": ["gym", "home"],
+    "blocks": [
+      {
+        "name": "Preparations",
+        "id": 1,
+        "workouts": [
+          {
+            "name": "Allt du behöver",
+            "id": "1",
+            "description": "Varmt välkommen till det här träningsprogrammet! Nedan hittar du massor med information som är bra att läsa igenom innan det är dags att köra igång med programmet för att du ska känna att du har koll på läget och känna dig väl förberedd. Den viktigaste punkten är allra längst ner, så glöm inte att läsa den. Uppvärmning Konditionsmaskiner En bra uppvärmning innehåller någon form av pulshöjande konditionsträning, som gärna är exempelvis att du cyklar till gymmet, eller tar en högintensiv promenad innan du ska träna hemma. Jag förstår att inte alla har tid med detta, framförallt om du är en av dom som kör detta program med max 30 minuter över till träning om dagen, så i det här upplägget kommer du få ett antal uppvärmningsövningar att köra istället, som antingen kan köras på gymmet eller hemma såklart. Uppvärmningsövningarna kan köras med vissa redskap, men det är inte tänkt att det ska vara tunga redskap, utan lätta gummiband eller ett träskaft är mer åt uppvärmningshållet. Uppvärmning kör man för att väcka kroppen och få igång blodcirkulationen så man enklare kan hantera jobbiga moment i sin träning, så här är det inte tänkt att man ska ta ut sig helt och hållet, men däremot vill man gärna få upp pulsen lite. I själva träningspassen sedan kommer det vara lite längre vila och lite tyngre vikter som är fokus, så då kommer inte pulsen vara lika hög, och det är därför vi fokuserar på att höja tempot i uppvärmningen. Jag kommer skriva en påminnelse om att ta 5-10 minuter kondition (valfritt) som uppvärmning i varje pass, men har du inte tid för det så kan du bortse från det. Har du möjlighet att cykla till gymmet eller hem, eller cykla på gymmet eller hemma, så gör gärna det, men har du inte möjlighet så skippa det och ta det en annan gång. Rörlighetsövningar Rörlighetsövningarna i träningspassen kommer ses som en del av träningspasset på 30 minuter, och här vill jag att du lägger 5 minuter på att köra igenom varje övning ett par gånger, så många gånger du hinner helt enkelt. Dock, stressa inte igenom övningarna och tänk att du ska tävla mot dig själv, utan övningarna är till för att kroppen ska vakna till liv och förbereda dig på den tyngre träningen. Feedback och frågor Har du frågor eller behöver hjälp med en övning, eller bara vill skryta med vilket grymt träningspass du genomfört? Klart du vill! I gruppen här får du mer än gärna ställa alla dina bilder eller berätta om hur det gått med dagens träning! Har du en mer privat fråga så kan du maila info@claratoll.se, men för feedback på din teknik etc så är det gruppen som gäller! Redskap På gym behöver du: en träningsbänk, kettlebells och/eller hantlar och en träningsmatta. Hemma behöver du: samma som ovan, men har du inte så många olika vikter att välja mellan så går det såklart att anpassa så du jobbar med fler repetitioner i de lite tyngre övningarna och färre om du bara har en tung vikt i de lite lättare övningarna. Du behöver också en bänk av något slag, ex din soffa, en stol, pall, eller ett trappsteg. Redskap som man kan använda som vikter om man inte har några hemma: Ryggsäck eller annan påse fylld med ex böcker eller stenar (jättejobbigt men bra utmaning! 😉 ) Vattenflaskor i olika storlekar fyllda med vatten eller sand Liten pall att göra dips på, en säng funkar också för att kunna trycka ifrån. En trasa att göra hamstring curls på. Och såklart en matta att göra övningarna på. Tycker du att någon övning är för lätt, ja men då vet du vad du ska göra! Ta tyngre vikt nästa gång! (vill du ha tips på hur du ökar vikten, hör av dig till mig, det är kul att hjälpa till med!) Nu kör vi!"
+          }
+        ]
+      },
+      {
+        "name": "Foundation",
+        "id": 2,
+        "description": "Build Strength Basics Establishing Power Core. Under Foundation-blocket bygger vi upp grundläggande teknik i basövningarna, så att du kan köra igång med mer komplicerade övningar under kommande två block. Detta för att hitta tillbaka till träningsrutiner och bygga upp en bra känsla i kroppen inför kommande pass.",
+        "workouts": [
+          {
+            "name": "pass 1",
+            "id": 1,
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "b6",
+                "name": "goblet squat",
+                "description": "knäböj med vikt i famnen",
+                "repetitions": [10, 10, 10, 10],
+                "weights": [5, 5, 5, 5]
+              },
+              {
+                "id": "o1",
+                "name": "bröstpress",
+                "description": "liggande bröstpress på bänk med hantlar",
+                "repetitions": [14, 14, 14],
+                "weights": [4, 4, 4]
+              },
+              {
+                "id": "o2",
+                "name": "Hela armhävningar",
+                "description": "Så många du orkar med/hinner med på 20 sekunder x 4 (vila åtminstone en minut mellan varje set, gärna två-tre minuter).",
+                "repetitions": [20, 20, 20, 20]
+              },
+              {
+                "id": "b2",
+                "name": "Utfallssteg med eller utan hantlar",
+                "description": "utfall",
+                "repetitions": [6, 6, 6]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          },
+          {
+            "id": 2,
+            "name": "pass 2",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "b3",
+                "name": "marklyft",
+                "description": "marklyft med hantlar, kettlebell eller skivstång. Har du möjlighet så ta lite tyngre vikt för varje repetition.",
+                "repetitions": [12, 12, 12, 12, 12],
+                "weights": [10, 10, 10, 10, 10]
+              },
+              {
+                "id": "h1",
+                "name": "Kettlebell swings",
+                "description": "kettlebellswings",
+                "repetitions": [10, 10],
+                "weights": [7, 7]
+              },
+              {
+                "id": "a1",
+                "name": "axelpress",
+                "description": "axelpress med hantlar eller med skivstång",
+                "repetitions": [10, 10, 10],
+                "weights": [5, 5, 5]
+              },
+              {
+                "id": "a2",
+                "name": "hantellyft sidled",
+                "description": "hantellyft i sidled",
+                "repetitions": [15, 15, 15],
+                "weights": [2, 2, 2]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          },
+          {
+            "id": 3,
+            "name": "pass 3",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "o2",
+                "name": "hela armhävningar",
+                "description": "Så många du orkar med/hinner med på 20 sekunder x 4 (vila åtminstone en minut mellan varje set, gärna två-tre minuter).",
+                "repetitions": [20, 20, 20, 20]
+              },
+              {
+                "id": "b1",
+                "name": "kliv upp på bänk",
+                "description": "kliv upp på bänk, fem per ben",
+                "repetitions": [5, 5, 5],
+                "weights": [3, 3, 3]
+              },
+              {
+                "id": "b2",
+                "name": "raka marklyft",
+                "description": "raka marklyft med hantlar eller med skivstång",
+                "repetitions": [10, 10, 10],
+                "weights": [10, 10, 10]
+              },
+              {
+                "id": "a4",
+                "name": "bicepscurls",
+                "description": "bicepscurls med hantlar, kettlebells eller andra redskap",
+                "repetitions": [12, 12, 12],
+                "weights": [5, 5, 5]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Intensification",
+        "id": 3,
+        "description": "Boosting Power Potential Elevating Strength Limits.  I Intensification-blocket är det dags att ta det ett steg vidare. I den här veckan jobbar vi med kraftutveckling och explosiv träning, med svårare övningar för att ge en bra utmaning till dig.",
+        "workouts": [
+          {
+            "name": "pass 1",
+            "id": 1,
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "b4",
+                "name": "knäböj med press",
+                "description": "knäböj med axelpress - en arm i taget - hantel eller kettlebell",
+                "repetitions": [3, 3, 3, 3],
+                "weights": [5, 5, 5, 5]
+              },
+              {
+                "id": "o1",
+                "name": "bröstpress",
+                "description": "liggande bröstpress på bänk med hantlar",
+                "repetitions": [12, 12, 12, 12],
+                "weights": [5, 5, 5, 5]
+              },
+              {
+                "id": "b7",
+                "name": "bulgariska utfall",
+                "description": "bulgariska utfall med eller utan vikt i händerna",
+                "repetitions": [5, 5, 5],
+                "weights": [5, 5, 5]
+              },
+              {
+                "id": "a1",
+                "name": "axelpress",
+                "description": "axelpress med hantlar eller kettlebells",
+                "repetitions": [14, 14],
+                "weights": [5, 5]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          },
+          {
+            "id": 2,
+            "name": "pass 2",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "b3",
+                "name": "marklyft",
+                "description": "marklyft med hantlar, kettlebell eller skivstång. Har du möjlighet så ta lite tyngre vikt för varje repetition.",
+                "repetitions": [5, 5, 5, 5, 5],
+                "weights": [10, 10, 10, 10, 10]
+              },
+              {
+                "id": "o2",
+                "name": "hela armhävningar",
+                "description": "Så många du orkar med/hinner med på 20 sekunder x 4 (vila åtminstone en minut mellan varje set, gärna två-tre minuter).",
+                "repetitions": [20, 20, 20]
+              },
+              {
+                "id": "a2",
+                "name": "hantellyft sidled",
+                "description": "hantellyft i sidled",
+                "repetitions": [12, 12, 12],
+                "weights": [2, 2, 2]
+              },
+              {
+                "id": "a4",
+                "name": "bicepscurls",
+                "description": "bicepscurls med hantlar, kettlebells eller andra redskap",
+                "repetitions": [12, 12, 12],
+                "weights": [5, 5, 5]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          },
+          {
+            "id": 3,
+            "name": "pass 3",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "b6",
+                "name": "goblet squat",
+                "description": "knäböj med vikt i famnen",
+                "repetitions": [8, 8, 8, 8, 8],
+                "weights": [5, 5, 5, 5, 5]
+              },
+              {
+                "id": "a3",
+                "name": "hantelrodd",
+                "description": "rodd med hantel",
+                "repetitions": [12, 12, 12],
+                "weights": [6, 6, 6]
+              },
+              {
+                "id": "b2",
+                "name": "raka marklyft",
+                "description": "raka marklyft med hantlar eller med skivstång",
+                "repetitions": [12, 12, 12, 12],
+                "weights": [8, 8, 8, 8]
+              },
+              {
+                "id": "a5",
+                "name": "tricepspress",
+                "description": "tricepspress med hantlar",
+                "repetitions": [10, 10, 10],
+                "weights": [5, 5, 5]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Advanced",
+        "id": 4,
+        "description": "Maximizing Power Gains Reaching Strength Peaks Tredje och sista blocket i det här träningsprogrammet är Advanced – här jobbar vi med tunga och mer komplexa övningar som utmanar ordentligt. Här testar vi din uthållighet och styrka till max, så var beredd på att ta i ordentligt.",
+        "workouts": [
+          {
+            "name": "pass 1",
+            "id": 1,
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "b6",
+                "name": "goblet squat",
+                "description": "knäböj med vikt i famnen",
+                "repetitions": [8, 8, 8],
+                "weights": [5, 5, 5]
+              },
+              {
+                "id": "a1",
+                "name": "Axelpress",
+                "description": "axelpress med hantlar eller med skivstång",
+                "repetitions": [12, 12, 12, 12],
+                "weights": [4, 4, 4, 5]
+              },
+              {
+                "id": "b7",
+                "name": "bulgariska utfall",
+                "description": "bulgariska utfall med eller utan vikt i händerna",
+                "repetitions": [5, 5, 5],
+                "weights": [5, 5, 5]
+              },
+              {
+                "id": "h1",
+                "name": "kettlebell swings",
+                "description": "kettlebell swings",
+                "repetitions": [15, 15, 15],
+                "weights": [5, 5, 5]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          },
+          {
+            "Id": 2,
+            "Name": "pass 2",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "Exercises": [
+              {
+                "id": "b3",
+                "name": "marklyft",
+                "description": "marklyft med hantlar, kettlebell eller skivstång. Har du möjlighet så ta lite tyngre vikt för varje repetition.",
+                "repetitions": [5, 5, 5, 5, 5, 5],
+                "weights": [10, 10, 10, 10, 10]
+              },
+              {
+                "id": "o1",
+                "name": "bröstpress",
+                "description": "liggande bröstpress på bänk med hantlar",
+                "repetitions": [8, 8, 8],
+                "weights": [5, 5, 5]
+              },
+              {
+                "id": "a3",
+                "name": "hantelrodd",
+                "description": "rodd med hantel",
+                "repetitions": [8, 8, 8],
+                "weights": [6, 6, 6]
+              },
+              {
+                "id": "a4",
+                "name": "bicepscurls",
+                "description": "bicepscurls med hantlar, kettlebells eller andra redskap",
+                "repetitions": [8, 8, 8],
+                "weights": [5, 5, 5]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          },
+          {
+            "Id": 3,
+            "Name": "pass 3",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "Exercises": [
+              {
+                "id": "b4",
+                "name": "knäböj med press",
+                "description": "knäböj med axelpress - en arm i taget - hantel eller kettlebell",
+                "repetitions": [3, 3, 3],
+                "weights": [5, 5, 5]
+              },
+              {
+                "id": "o2",
+                "name": "hela armhävningar",
+                "description": "Så många du orkar med/hinner med på 20 sekunder x 4 (vila åtminstone en minut mellan varje set, gärna två-tre minuter).",
+                "repetitions": [20, 20, 20, 20]
+              },
+              {
+                "id": "h1",
+                "name": "kettlebell swings",
+                "description": "kettlebell swings",
+                "repetitions": [15, 15, 15, 15],
+                "weights": [5, 5, 5, 5]
+              },
+              {
+                "id": "a5",
+                "name": "tricepspress",
+                "description": "tricepspress med hantlar",
+                "repetitions": [12, 12, 12],
+                "weights": [5, 5, 5]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Avslut",
+        "id": 5,
+        "description": "Avslutande del",
+        "workouts": [
+          {
+            "name": "Tack för denna gången",
+            "id": 1,
+            "description": "Well done you! Nu har du gjort klart det här träningsprogrammet!! Nu är det dags att antingen gå vidare… eller varför inte köra träningsprogrammet igen? 😉 Fler program hittar på den här sidan men först! Glöm inte att klicka i Mark Complete så du visar att du är klar med hela programmet!!"
+          }
+        ]
+      }
+    ]
+  }
+]

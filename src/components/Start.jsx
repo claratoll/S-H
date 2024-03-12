@@ -7,6 +7,7 @@ import MonthlyChallenge from './MonthlyChallenge';
 import UsersGoals from './UsersGoals';
 import NextWorkout from './NextWorkout';
 import images from '../assets/images.js';
+import logo from '../assets/logo.png';
 import PromotionProgram from './PromotionProgram.jsx';
 
 const Start = () => {
@@ -14,6 +15,7 @@ const Start = () => {
 
   return (
     <div>
+      <img src={logo} alt='logo' />
       {user ? (
         <div>
           <p>Hej {user ? user.name : ''}</p>
