@@ -221,8 +221,8 @@ ul {
 }
 
 .imgarrow {
-  width: 20px;
-  height: auto;
+  max-width: 20px;
+  max-height: 20px;
 }
 
 .workoutcard input[type='number'] {

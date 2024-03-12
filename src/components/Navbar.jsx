@@ -22,6 +22,7 @@ const Navbar = () => {
             <li onClick={() => navigate('/')}>Start</li>
             <li onClick={() => navigate('/profile')}>Profile</li>
             <li onClick={() => navigate('/')}>Sökfunktion</li>
+            <li onClick={() => navigate('/')}>mörkt vs ljust läge</li>
           </ul>
         </div>
       </nav>

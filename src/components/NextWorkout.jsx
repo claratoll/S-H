@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import '../App.css';
 import { useState, useEffect } from 'react';
 import workoutPrograms from '../assets/WorkoutPrograms.json';
@@ -9,9 +10,6 @@ const NextWorkout = () => {
   const { getData } = useData(); //hämtar från firebase
   const [nextWorkouts, setNextWorkouts] = useState([]);
   const [loading, setLoading] = useState(true);
-  const programId = 0;
-  const blockId = 0;
-  const workoutId = 0;
 
   const getAllWorkoutsFromFirebase = async () => {
     let tempNextWorkouts = []; // Skapar en temporär array
@@ -29,14 +27,12 @@ const NextWorkout = () => {
             !firebaseWorkout ||
             (firebaseWorkout && firebaseWorkout.isActive)
           ) {
-            console.log(
-              'hallå Nästa träningspass är:',
-              workout.name,
-              workout.id
-            );
-
-            console.log('Adding workout: ', workout.name);
-            tempNextWorkouts.push(workout);
+            tempNextWorkouts.push({
+              ...workout,
+              programId: program.id,
+              blockId: block.id,
+              workoutId: workout.id,
+            });
 
             nextWorkoutFound = true;
             break;
@@ -76,8 +72,8 @@ const NextWorkout = () => {
             }}
           >
             <Link
-              to={`/programs/${programId}/${blockId}/${workoutId}`}
-              state={{ nextWorkout, programId: programId }}
+              to={`/programs/${nextWorkout.programId}/${nextWorkout.blockId}/${nextWorkout.workoutId}`}
+              state={{ workout: nextWorkout, programId: nextWorkout.programId }}
             >
               <h3>{nextWorkout.name}</h3>
             </Link>
