@@ -27,9 +27,39 @@ const Workout = () => {
     setShowInfo(newShowInfo);
   };
 
-  const handleAddRowClick = () => {};
+  const handleAddRowClick = (exerciseIndex) => {
+    const newRepsValues = [...repsValues];
+    const newWeightsValues = [...weightsValues];
 
-  const handleDeleteRowClick = () => {};
+    const lastRowIndex = newRepsValues[exerciseIndex].length - 1;
+    const lastRowRepValue = newRepsValues[exerciseIndex][lastRowIndex];
+    const lastRowWeightValue = newWeightsValues[exerciseIndex][lastRowIndex];
+
+    newRepsValues[exerciseIndex].push(lastRowRepValue);
+    if (newWeightsValues[exerciseIndex].length > 0) {
+      newWeightsValues[exerciseIndex].push(lastRowWeightValue);
+      setWeightsValues(newWeightsValues);
+    }
+
+    setRepsValues(newRepsValues);
+  };
+
+  const handleDeleteRowClick = (exerciseIndex, setIndex) => {
+    const newRepsValues = [...repsValues];
+    const newWeightsValues = [...weightsValues];
+
+    // Ta bort reps-värdet från repsValues-arrayen
+    newRepsValues[exerciseIndex].splice(setIndex, 1);
+
+    // Om weights-värdet finns, ta bort det från weightsValues-arrayen
+    if (newWeightsValues[exerciseIndex].length > 0) {
+      newWeightsValues[exerciseIndex].splice(setIndex, 1);
+      setWeightsValues(newWeightsValues);
+    }
+
+    // Uppdatera states med de nya värdena
+    setRepsValues(newRepsValues);
+  };
 
   const handleInputChange = (exerciseIndex, setIndex, event) => {
     const { name, value } = event.target;
@@ -79,9 +109,7 @@ const Workout = () => {
           const exercisesData = Object.values(data);
           console.log('data is:', data);
 
-          // För varje övning, hämta repetitions- och viktvärden
           const repsValuesArray = workout.exercises.map((exercise) => {
-            // Kontrollera om det finns data för den här övningen
             const exerciseData = exercisesData.find(
               (data) => data.exerciseID === exercise.id
             );
@@ -212,7 +240,9 @@ const Workout = () => {
                             src={deleteImg}
                             alt='delete row button'
                             className='imgarrow'
-                            onClick={() => handleDeleteRowClick()}
+                            onClick={() =>
+                              handleDeleteRowClick(index, setIndex)
+                            }
                           />
                           <br />
                         </React.Fragment>
@@ -222,7 +252,7 @@ const Workout = () => {
                     src={addImg}
                     alt='add row button'
                     className='imgarrow'
-                    onClick={() => handleAddRowClick()}
+                    onClick={() => handleAddRowClick(index)}
                   />
                 </div>
               </div>
