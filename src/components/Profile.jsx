@@ -3,6 +3,7 @@ import useUser from '../features/useUser';
 import app from '../firebase';
 import { useNavigate } from 'react-router-dom';
 import CalendarView from './CalendarView';
+import NextWorkout from './NextWorkout';
 import PremiumPayment from '../payments/PremiumPayment';
 import ManageSubscription from '../payments/ManageSubscription';
 import usePremium from '../features/usePremium';
@@ -15,9 +16,9 @@ const Profile = () => {
   const currentTime = new Date().getHours();
   let greeting;
 
-  if (currentTime >= 6 && currentTime < 12) {
+  if (currentTime >= 6 && currentTime < 10) {
     greeting = 'God morgon';
-  } else if (currentTime >= 12 && currentTime < 18) {
+  } else if (currentTime >= 10 && currentTime < 18) {
     greeting = 'God dag';
   } else if (currentTime >= 18 && currentTime < 22) {
     greeting = 'God kväll';
@@ -59,7 +60,7 @@ const Profile = () => {
             )}
           </div>
           <p>Hur mår du idag?</p>
-          <p>Scrollview av alla aktiva träningsprogram</p>
+          <NextWorkout />
           <CalendarView />
         </>
       ) : (

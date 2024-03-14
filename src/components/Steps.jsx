@@ -59,6 +59,7 @@ const Steps = () => {
   };
 
   const handleTodaysChange = (e) => {
+    const today = new Date();
     const value = e.target.value;
     if (value.trim() === '' || value === '') {
       setEditedTodaysSteps('');
@@ -66,7 +67,7 @@ const Steps = () => {
       const intValue = parseInt(value, 10);
       if (!isNaN(intValue)) {
         setEditedTodaysSteps(intValue);
-        updateCalendarData(intValue);
+        updateCalendarData(today, { steps: intValue }, 'steps');
       }
     }
   };

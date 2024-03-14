@@ -530,8 +530,7 @@
                 "id": 13,
                 "name": "Progressiv Muskelavslappning",
                 "description": "En avslappningsövning som minskar muskelspänningar.",
-                "repetitions": [8, 8, 8],
-                "weights": [10, 12, 10]
+                "repetitions": [8, 8, 8]
               },
               {
                 "id": 14,
