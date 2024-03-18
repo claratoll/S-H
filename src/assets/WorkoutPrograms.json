@@ -3,6 +3,7 @@
     "id": 1,
     "name": "Styrka för Nybörjare",
     "description": "Information om programmet",
+    "user": "peasant",
     "blocks": [
       {
         "id": 1,
@@ -213,6 +214,7 @@
     "id": 2,
     "name": "Högintensiv Konditionsträning",
     "description": "Information om programmet",
+    "user": "peasant",
     "blocks": [
       {
         "id": 1,
@@ -397,6 +399,7 @@
     "id": 3,
     "name": "Flexibilitet och Avslappning",
     "description": "Information om programmet",
+    "user": "royalty",
     "blocks": [
       {
         "id": 1,

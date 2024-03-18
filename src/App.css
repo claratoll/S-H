@@ -19,6 +19,22 @@ body,
   -moz-osx-font-smoothing: grayscale;
 }
 
+.backgroundImg {
+  background-image: url('./assets/4.png');
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+.backgroundImg2 {
+  background-image: url('./assets/2.png');
+  background-size: cover;
+  min-height: 100vh;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 @media (prefers-color-scheme: light) {
   #root {
     background-color: #efe9e7;
