@@ -22,7 +22,7 @@ const PremiumPayment = () => {
 
       const checkoutSessionsCollection = collection(
         db,
-        'customers',
+        'users',
         currentUser.uid,
         'checkout_sessions'
       );
@@ -35,7 +35,7 @@ const PremiumPayment = () => {
 
       const docSnapshot = doc(
         db,
-        'customers',
+        'users',
         currentUser.uid,
         'checkout_sessions',
         docRef.id

@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import workoutPrograms from '../assets/WorkoutPrograms.json';
-
+import { Link } from 'react-router-dom';
 import images from '../assets/images.js';
 
 const PromotionProgram = (props) => {
@@ -15,10 +15,18 @@ const PromotionProgram = (props) => {
   const programDescription = program.description;
 
   return (
-    <div className='workoutcard'>
+    <div
+      className='program card'
+      style={{
+        backgroundImage: `url(${images[program.id]})`,
+        backgroundRepeat: 'no-repeat',
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+      }}
+    >
       <h2>{programName}</h2>
       <p>{programDescription}</p>
-      <img src={images[program.id]} alt='Bild nummer 12' />
+      <Link to={`/programs/`}>View Program</Link>
     </div>
   );
 };

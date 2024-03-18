@@ -37,7 +37,7 @@ const Profile = () => {
   };
 
   return (
-    <div>
+    <div className='backgroundImg'>
       {user ? (
         <>
           <h2>
@@ -64,7 +64,7 @@ const Profile = () => {
           <CalendarView />
         </>
       ) : (
-        <p>Du behöver vara inloggad för att se detta.</p>
+        <p className='card'>Du behöver vara inloggad för att se detta.</p>
       )}
     </div>
   );

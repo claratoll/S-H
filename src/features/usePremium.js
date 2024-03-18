@@ -9,24 +9,26 @@ const usePremium = () => {
 
   useEffect(() => {
     const checkSubscription = async () => {
-      const userSubscriptionsRef = collection(
-        db,
-        'customers',
-        auth.currentUser.uid,
-        'subscriptions'
-      );
-      const userSubscriptionsSnapshot = await getDocs(userSubscriptionsRef);
+      if (auth.currentUser) {
+        const userSubscriptionsRef = collection(
+          db,
+          'users',
+          auth.currentUser.uid,
+          'subscriptions'
+        );
+        const userSubscriptionsSnapshot = await getDocs(userSubscriptionsRef);
 
-      userSubscriptionsSnapshot.forEach((doc) => {
-        const subscription = doc.data();
-        if (subscription.status === 'active') {
-          setIsPremium(true);
-        }
-      });
+        userSubscriptionsSnapshot.forEach((doc) => {
+          const subscription = doc.data();
+          if (subscription.status === 'active') {
+            setIsPremium(true);
+          }
+        });
+      }
     };
 
     checkSubscription();
-  }, [auth, db]);
+  }, [auth, db, auth.currentUser]);
 
   return isPremium;
 };

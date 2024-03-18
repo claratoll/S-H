@@ -7,6 +7,7 @@
     "recommendations": "Det här programmet är för dig som vill träna 30 minuter per vecka x 3 pass. Du behöver ha lite koll på hantlar och kettlebells sen tidigare, har du inte det rekommenderar jag Get started at home, Get started eller Välkommen in på gymmet – programmen. Det här programmet är för dig som vill kicka igång hösten och köra ett kort och intensivt träningsprogram för att komma igång igen!",
     "category": "beginner",
     "tags": ["gym", "home"],
+    "user": "peasant",
     "blocks": [
       {
         "name": "Preparations",
