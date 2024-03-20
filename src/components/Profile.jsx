@@ -1,4 +1,4 @@
-import { getAuth, signOut } from 'firebase/auth';
+import { getAuth, signOut, deleteUser } from 'firebase/auth';
 import useUser from '../features/useUser';
 import app from '../firebase';
 import { useNavigate } from 'react-router-dom';
@@ -26,6 +26,30 @@ const Profile = () => {
     greeting = 'God natt';
   }
 
+  const handleDeleteAccount = async () => {
+    const isConfirmed = window.confirm(
+      'Är du säker på att du vill ta bort kontot? Detta går inte att ångra.'
+    );
+    if (isConfirmed) {
+      console.log('ta bort konto funktion ');
+      const auth = getAuth(app);
+      const user = auth.currentUser;
+
+      try {
+        await deleteUser(user);
+        console.log('Användaren har tagit bort sitt konto');
+        navigate('/');
+
+        //navigera till startsidan
+      } catch (error) {
+        console.error('Fel uppstod vid borttagning av användarkonto:', error);
+        window.confirm(
+          'Det gick inte att ta bort ditt konto. Kontakta info@claratoll.se så hjälper vi dig.'
+        );
+      }
+    }
+  };
+
   const logOutFromFirebase = async (event) => {
     event.preventDefault();
     try {
@@ -40,12 +64,11 @@ const Profile = () => {
     <div className='backgroundImg'>
       {user ? (
         <>
-          <h2>
-            {greeting} {user ? user.name : ''}
-          </h2>
-          <button onClick={logOutFromFirebase}>Logga ut</button>
-
           <div className='card'>
+            <h2>
+              {greeting} {user ? user.name : ''}
+            </h2>
+
             <p>din medlemskapsstatus är </p>
             {!isUserPremium ? (
               <div>
@@ -59,9 +82,19 @@ const Profile = () => {
               </div>
             )}
           </div>
-          <p>Hur mår du idag?</p>
+          <p className='card'>Hur mår du idag?</p>
           <NextWorkout />
           <CalendarView />
+          <div className='card'>
+            <button onClick={logOutFromFirebase}>Logga ut</button>
+            <p>
+              Vill du ta bort ditt konto helt och hållet så klickar du på
+              knappen nedan. Då tas all data bort, din eventuella prenumeration
+              avbryts och det är ej återställbart.
+            </p>
+
+            <button onClick={handleDeleteAccount}>Ta bort konto</button>
+          </div>
         </>
       ) : (
         <p className='card'>Du behöver vara inloggad för att se detta.</p>

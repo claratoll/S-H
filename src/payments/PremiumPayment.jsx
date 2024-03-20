@@ -1,6 +1,8 @@
 import '../App.css';
+
 import { getAuth } from 'firebase/auth';
 import app from '../firebase';
+
 import {
   getFirestore,
   addDoc,
