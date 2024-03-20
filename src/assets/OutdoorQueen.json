@@ -1,0 +1,1218 @@
+[
+  {
+    "name": "Outdoor Queen",
+    "id": "U1",
+    "description": "Ett träningsprogram för dig som vill träna på utegym.",
+    "time": "7 weeks",
+    "recommendations": "Outdoor Queen är speciellt utformat för kvinnor som vill ta sin träning till nästa nivå på utegymmet! I programmet får du köra tre kraftfulla block med åtta intensiva pass i varje, allt för att hjälpa dig att nå dina mål och bli den bästa versionen av dig själv. Oavsett om du är en erfaren utomhustränare eller nybörjare, kommer Outdoor Queen att utmana och inspirera dig.    ",
+    "category": "Intermediate",
+    "tags": ["utegym"],
+    "user": "royalty",
+    "blocks": [
+      {
+        "name": "Get ready",
+        "id": 1,
+        "workouts": [
+          {
+            "name": "Innan du börjar",
+            "id": "1",
+            "description": "Grattis, du har tagit det första steget mot ett hälsosammare och starkare jag! För att köra igång med programmet är det några punkter jag vill att du tänker igenom först.\nVad du behöver: \nTräningskläder: Bär bekväma kläder som gör det enkelt att röra sig fritt. Tänk på väderförhållandena och anpassa din klädsel därefter.\nSkor: Investera i ett par ordentliga tränings- eller löparskor som ger stöd och komfort under dina utomhuspass.\nVattenflaska: Stanna hydrerad är avgörande. Se till att ha med dig en vattenflaska för att dricka under träningen.\nMöjligtvis träningsmattor eller handskar: Beroende på passen kan du vilja använda en träningsmatta eller handskar för extra grepp och skydd.\nExtra redskap: Beroende på hur utegymmet är uppbyggt där du tänkt träna så kan det vara en fördel att ta med egna redskap, det är inte alla utegym som har ex en knäböjställning, så hantlar eller gummiband kan vara skönt att ha med sig!"
+          }
+        ]
+      },
+      {
+        "name": "Foundation",
+        "id": 2,
+        "description": "info",
+        "workouts": [
+          {
+            "name": "pass 1",
+            "id": 1,
+            "warmup": {
+              "instruction": "En bra uppvärmningsform är att cykla / jogga till utegymmet, beroende på hur långt du har dit, men 5 minuter lätt konditionsuppvärmning är alltid bra för att få igång kroppen. Har du inte möjlighet att köra uppvärmning på väg till utegymmet så rekommenderar jag att ta fem minuters lugn löpning på plats."
+            },
+            "exercises": [
+              {
+                "id": "k4",
+                "name": "Knäböj i utegymsställning",
+                "description": "Knäböj i utegymsställning",
+                "repetitions": [10, 10, 10, 10]
+              },
+              {
+                "id": "r1",
+                "name": "Hängande drag",
+                "description": "Hängande drag",
+                "repetitions": [5, 5, 5, 5]
+              },
+              {
+                "id": "u3",
+                "name": "Push lunges",
+                "description": "Utfallssteg med tryck",
+                "repetitions": [6, 6, 6]
+              },
+
+              {
+                "id": "a1",
+                "name": "Axelpress",
+                "description": "Axelpress med antingen medhavd vikt eller i ställning",
+                "repetitions": [10, 10, 10]
+              },
+              {
+                "id": "o6",
+                "name": "Bänkpress i utegymsställning",
+                "description": "Antingen bänkpress i utegymsställning om det finns på ditt utegym eller armhävningar (på tå eller på knä) mot en bänk eller på marken",
+                "repetitions": [10, 10, 10]
+              }
+            ],
+            "cooldown": {
+              "instruction": "Nedvarvning är alltid viktigt att genomföra för att få kroppen att slappna av efter ett träningspass, och här finns det många olika övningar man kan göra, beroende på vilka muskler man jobbat mest med och vilken typ av träning man genomfört. Här rekommenderar jag någon form av lugn konditionsträning hem, ex jogging, promenad eller lugn cykling.\nRörlighetsövningar är också bra att göra, fem-tio minuter av övningarna nedan, som antingen kan göras på plats eller hemma."
+            }
+          },
+          {
+            "id": 2,
+            "name": "pass 2",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "o4",
+                "name": "Hänga i ställning",
+                "description": "samla ihop dina sekunder med att hänga så länge du orkar, ex fem sekunder i taget x 6 gånger för att få ihop 30 sekunder",
+                "repetitions": [30]
+              },
+              {
+                "id": "bp4",
+                "name": "Bröstpress i ställning",
+                "description": "Bröstpress i ställning. mellan 5-6 på skalan (ska inte vara maxtungt)",
+                "repetitions": [6, 6, 6, 6, 6]
+              },
+              {
+                "id": "h2",
+                "name": "Walk in walk out plank",
+                "description": "Walk in walk out plank - in seconds",
+                "repetitions": [20, 20, 20]
+              },
+              {
+                "id": "r2",
+                "name": "Sittande rodd",
+                "description": "Sittande rodd",
+                "repetitions": [10, 10, 10, 10]
+              },
+              {
+                "id": "b3",
+                "name": "Benpress",
+                "description": "(antingen i ställning eller enbenspress, isf välj en låg höjd och kör högre höjd om det känns stabilt)",
+                "repetitions": [10, 10, 10, 10]
+              },
+
+              {
+                "id": "h3",
+                "name": "Rörlighetsmountainclimbers",
+                "description": "Rörlighetsmountainclimbers - i sekunder",
+                "repetitions": [20, 20]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          },
+          {
+            "id": 3,
+            "name": "pass 3",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "o2",
+                "name": "Hängande drag",
+                "description": "Bröstpress i ställning. mellan 5-6 på skalan (ska inte vara maxtungt)",
+                "repetitions": [20, 20, 20]
+              },
+              {
+                "id": "o2",
+                "name": "Hängande knälyft",
+                "description": "totalt 30 sekunder",
+                "repetitions": [30]
+              },
+              {
+                "id": "h2",
+                "name": "Knäböj i utegymsställning",
+                "description": "Walk in walk out plank - in seconds",
+                "repetitions": [5, 5, 5, 5, 5]
+              },
+              {
+                "id": "o7",
+                "name": "Utfallssteg",
+                "description": "Sittande rodd",
+                "repetitions": [8, 8, 8, 8]
+              },
+              {
+                "id": "b10",
+                "name": "Marklyft i utegymsställning",
+                "description": "(antingen i ställning eller enbenspress, isf välj en låg höjd och kör högre höjd om det känns stabilt)",
+                "repetitions": [10, 10, 10, 10]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          },
+          {
+            "id": 4,
+            "name": "pass 4",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "o4",
+                "name": "Hänga i ställning",
+                "description": "samla ihop dina sekunder med att hänga så länge du orkar, ex fem sekunder i taget x 6 gånger för att få ihop 30 sekunder",
+                "repetitions": [30]
+              },
+              {
+                "id": "o2",
+                "name": "Bröstpress i ställning",
+                "description": "Bröstpress i ställning. mellan 5-6 på skalan (ska inte vara maxtungt)",
+                "repetitions": [10, 10, 10, 10, 10]
+              },
+              {
+                "id": "h2",
+                "name": "Walk in walk out plank",
+                "description": "Walk in walk out plank - in seconds",
+                "repetitions": [20, 20, 20]
+              },
+              {
+                "id": "o7",
+                "name": "Tåhävningar",
+                "description": "Sittande rodd",
+                "repetitions": [10, 10, 10, 10]
+              },
+              {
+                "id": "b10",
+                "name": "Axelpress",
+                "description": "(antingen i ställning eller enbenspress, isf välj en låg höjd och kör högre höjd om det känns stabilt)",
+                "repetitions": [10, 10, 10, 10]
+              },
+
+              {
+                "id": "h3",
+                "name": "Rörlighetsmountainclimbers",
+                "description": "Rörlighetsmountainclimbers - i sekunder",
+                "repetitions": [20, 20]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          },
+          {
+            "id": 5,
+            "name": "pass 5",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "m2",
+                "name": "Marklyft i utegymsställning",
+                "description": "",
+                "repetitions": [6, 6, 6, 6, 6]
+              },
+              {
+                "id": "u1",
+                "name": "Utfallssteg",
+                "description": "utfall",
+                "repetitions": [10, 10, 10, 10]
+              },
+              {
+                "id": "r1",
+                "name": "Hängande drag",
+                "description": "i sekunder",
+                "repetitions": [20, 20, 20]
+              },
+              {
+                "id": "b1",
+                "name": "Kliv upp på bänk",
+                "description": "Kliv upp på bänk",
+                "repetitions": [10, 10, 10]
+              },
+              {
+                "id": "h4",
+                "name": "Burpees",
+                "description": "burpees - i sekunder",
+                "repetitions": [20, 20]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          },
+          {
+            "id": 6,
+            "name": "pass 6",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "o4",
+                "name": "Hänga i ställning",
+                "description": "samla ihop dina sekunder med att hänga så länge du orkar, ex fem sekunder i taget x 6 gånger för att få ihop 30 sekunder",
+                "repetitions": [30]
+              },
+              {
+                "id": "o2",
+                "name": "Knäböj i utegymsställning",
+                "description": "Knäböj i utegymsställning",
+                "repetitions": [12, 12, 12]
+              },
+              {
+                "id": "h2",
+                "name": "Axelpress",
+                "description": "Axelpress med antingen medhavd vikt eller i ställning",
+                "repetitions": [12, 12, 12]
+              },
+
+              {
+                "id": "b1",
+                "name": "Armhävningar",
+                "description": "i sekunder",
+                "repetitions": [20, 20, 20, 20]
+              },
+              {
+                "id": "h3",
+                "name": "Push lunges",
+                "description": "räknas per ben",
+                "repetitions": [6, 6, 6]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          },
+          {
+            "id": 7,
+            "name": "pass 7",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "m2",
+                "name": "Marklyft i utegymsställning",
+                "description": "marklyft i utegymsställning",
+                "repetitions": [12, 12, 12, 12, 12]
+              },
+              {
+                "id": "u2",
+                "name": "Bulgargiska utfall",
+                "description": "räknas per ben",
+                "repetitions": [5, 5, 5]
+              },
+              {
+                "id": "r1",
+                "name": "Hängande drag",
+                "description": "Hängande drag",
+                "repetitions": [5, 5, 5]
+              },
+
+              {
+                "id": "b1",
+                "name": "Kliv upp på bänk",
+                "description": "Kliv upp på bänk",
+                "repetitions": [10, 10, 10]
+              },
+              {
+                "id": "h3",
+                "name": "Rörlighetsmountainclimbers",
+                "description": "Rörlighetsmountainclimbers - i sekunder",
+                "repetitions": [20, 20]
+              },
+              {
+                "id": "h5",
+                "name": "Hängande knälyft",
+                "description": "Hängande knälyft",
+                "repetitions": [20, 20]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          },
+          {
+            "id": 8,
+            "name": "pass 8",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "o4",
+                "name": "Hänga i ställning",
+                "description": "samla ihop dina sekunder med att hänga så länge du orkar, ex fem sekunder i taget x 6 gånger för att få ihop 30 sekunder",
+                "repetitions": [30]
+              },
+              {
+                "id": "bp2",
+                "name": "Bänkpress i utegymsställning",
+                "description": "Antingen bänkpress i utegymsställning om det finns på ditt utegym eller armhävningar (på tå eller på knä) mot en bänk eller på marken",
+                "repetitions": [5, 5, 5, 5]
+              },
+              {
+                "id": "k4",
+                "name": "Knäböj i utegymsställning",
+                "description": "Knäböj i utegymsställning",
+                "repetitions": [5, 5, 5, 5, 5]
+              },
+
+              {
+                "id": "b3",
+                "name": "Benpress",
+                "description": "antingen i ställning eller enbenspress, isf välj en låg höjd och kör högre höjd om det känns stabilt",
+                "repetitions": [10, 10, 10, 10]
+              },
+              {
+                "id": "a1",
+                "name": "Axelpress",
+                "description": "Axelpress med antingen medhavd vikt eller i ställning",
+                "repetitions": [10, 10, 10]
+              },
+              {
+                "id": "h5",
+                "name": "Hängande knälyft",
+                "description": "i sekunder",
+                "repetitions": [20, 20]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Strength",
+        "id": 3,
+        "description": "I kommande pass så kommer det vara många övningar som du får pusha dig själv i att göra så många du orkar under en viss tid, för att utmana dig själv och bygga upp styrka och uthållighet under det här blocket. Så som ex i övningarna nedan så står det att du ska göra så många repetitioner du orkar under 30 sekunder x 4 set, och sen vilar du mellan 1-3 minuter och sen kör du igen.\nVill du kombinera övningarna så får du gärna göra det, ex köra övningarna som en cirkel, köra två övningar i taget och köra dem varannan gång eller göra på något annat sätt som passar dig och utegymmet du kör på. Vill du köra en övning i taget så går det också bra såklart, kör det som passar dig.",
+        "workouts": [
+          {
+            "name": "pass 1",
+            "id": 1,
+            "warmup": {
+              "instruction": "En bra uppvärmningsform är att cykla / jogga till utegymmet, beroende på hur långt du har dit, men 5 minuter lätt konditionsuppvärmning är alltid bra för att få igång kroppen. Har du inte möjlighet att köra uppvärmning på väg till utegymmet så rekommenderar jag att ta fem minuters lugn löpning på plats."
+            },
+            "exercises": [
+              {
+                "id": "bp5",
+                "name": "Armhävningar",
+                "description": "Hela armhävningar - i sekunder",
+                "repetitions": [20, 20, 20, 20]
+              },
+              {
+                "id": "r1",
+                "name": "Hängande drag",
+                "description": "Hängande drag i sekunder",
+                "repetitions": [30, 30, 30, 30]
+              },
+              {
+                "id": "k4",
+                "name": "Knäböj i utegymsställning",
+                "description": "Om du kör i knäböjställning så gör så många du orkar med ställningen och fortsätt kör resten utan vikt",
+                "repetitions": [12, 12, 12, 12, 12]
+              },
+              {
+                "id": "o4",
+                "name": "Hänga i ställning",
+                "description": "samla ihop dina sekunder med att hänga så länge du orkar för att få ihop 60 sekunder",
+                "repetitions": [60]
+              },
+              {
+                "id": "a1",
+                "name": "Axelpress",
+                "description": "Axelpress med antingen medhavd vikt eller i ställning",
+                "repetitions": [10, 10, 10]
+              }
+            ],
+            "cooldown": {
+              "instruction": "Nedvarvning är alltid viktigt att genomföra för att få kroppen att slappna av efter ett träningspass, och här finns det många olika övningar man kan göra, beroende på vilka muskler man jobbat mest med och vilken typ av träning man genomfört. Här rekommenderar jag någon form av lugn konditionsträning hem, ex jogging, promenad eller lugn cykling.\nRörlighetsövningar är också bra att göra, fem-tio minuter av övningarna nedan, som antingen kan göras på plats eller hemma."
+            }
+          },
+          {
+            "id": 2,
+            "name": "pass 2",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "m2",
+                "name": "Marklyft i utegymsställning",
+                "description": "marklyft i utegymsställning",
+                "repetitions": [10, 10, 10, 10]
+              },
+              {
+                "id": "o2",
+                "name": "Dips",
+                "description": "Walk in walk out plank - in seconds",
+                "repetitions": [20, 20, 20]
+              },
+              {
+                "id": "o1",
+                "name": "Hänga i ställning",
+                "description": "samla ihop dina sekunder med att hänga så länge du orkar för att få ihop 60 sekunder",
+                "repetitions": [60]
+              },
+              {
+                "id": "h5",
+                "name": "Hängande knälyft",
+                "description": "Gör så många du orkar under 30 sekunder, du får givetvis pausa och köra ex 10s, 10s, 10s",
+                "repetitions": [30]
+              },
+              {
+                "id": "o3",
+                "name": "Negativa chins",
+                "description": "negativa chins",
+                "repetitions": [3, 3, 3]
+              },
+              {
+                "id": "u2",
+                "name": "Bulgargiska utfall",
+                "description": "Kliv upp på bänk",
+                "repetitions": [6, 6, 6, 6]
+              },
+              {
+                "id": "h3",
+                "name": "Rörlighetsmountainclimbers",
+                "description": "Rörlighetsmountainclimbers - i sekunder",
+                "repetitions": [20, 20]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          },
+          {
+            "id": 3,
+            "name": "pass 3",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "k4",
+                "name": "Knäböj i utegymsställning",
+                "description": "Om du kör i knäböjställning så gör så många du orkar med ställningen och fortsätt kör resten utan vikt",
+                "repetitions": [10, 10, 10, 10, 10]
+              },
+              {
+                "id": "r1",
+                "name": "Hängande drag",
+                "description": "Gör så många du orkar ",
+                "repetitions": [30, 30, 30, 30]
+              },
+              {
+                "id": "a1",
+                "name": "Axelpress",
+                "description": "10 per arm om du kör en i taget",
+                "repetitions": [10, 10, 10]
+              },
+              {
+                "id": "b5",
+                "name": "Höftlyft",
+                "description": "med eller utan vikt, eller med miniband, eller enbenshöftlyft",
+                "repetitions": [10, 10, 10, 10]
+              },
+
+              {
+                "id": "h6",
+                "name": "Snabba mountainclimbers",
+                "description": "i sekunder",
+                "repetitions": [20, 20, 20]
+              },
+              {
+                "id": "h7",
+                "name": "Planka med hantelförflyttning",
+                "description": "i sekunder - använd en vattenflaska eller annat redskap om du inte har en hantel",
+                "repetitions": [20, 20, 20]
+              },
+              {
+                "id": "h8",
+                "name": "Planka med vrid",
+                "description": "i sekunder - använd en vattenflaska eller annat redskap om du inte har en hantel",
+                "repetitions": [20, 20, 20]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          },
+          {
+            "id": 4,
+            "name": "pass 4",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "b6",
+                "name": "Upphopp",
+                "description": "upphopp eller helt vanliga knäböj",
+                "repetitions": [10, 10, 10]
+              },
+              {
+                "id": "h5",
+                "name": "Hängande knälyft",
+                "description": "Walk in walk out plank - in seconds",
+                "repetitions": [30, 30, 30]
+              },
+              {
+                "id": "o2",
+                "name": "dips",
+                "description": "Sittande rodd",
+                "repetitions": [6, 6, 6]
+              },
+              {
+                "id": "r1",
+                "name": "Hängande drag",
+                "description": "Hängande drag i sekunder",
+                "repetitions": [30, 30, 30, 30]
+              },
+              {
+                "id": "h9",
+                "name": "Armwalks",
+                "description": "i sekunder",
+                "repetitions": [20, 20]
+              },
+              {
+                "id": "h4",
+                "name": "Burpees",
+                "description": "burpees - i sekunder",
+                "repetitions": [20, 20]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          },
+          {
+            "id": 5,
+            "name": "pass 5",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "bp5",
+                "name": "Armhävningar",
+                "description": "Gör så många du orkar under 30 sekunder",
+                "repetitions": [30, 30, 30, 30]
+              },
+              {
+                "id": "k4",
+                "name": "Knäböj i utegymsställning",
+                "description": "Om du kör i knäböjställning så gör så många du orkar med ställningen och fortsätt kör resten utan vikt ",
+                "repetitions": [12, 12, 12, 12]
+              },
+              {
+                "id": "b5",
+                "name": "Höftlyft",
+                "description": "med eller utan vikt, eller med miniband, eller enbenshöftlyft",
+                "repetitions": [10, 10, 10, 10]
+              },
+
+              {
+                "id": "o3",
+                "name": "Negativa chins",
+                "description": "Gör så många du orkar under 20 sekunder",
+                "repetitions": [20, 20, 20, 20]
+              },
+              {
+                "id": "b4",
+                "name": "Enbenspress",
+                "description": "enbenspress - räknas per ben",
+                "repetitions": [6, 6, 6]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          },
+          {
+            "id": 6,
+            "name": "pass 6",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "m2",
+                "name": "Marklyft i utegymsställning",
+                "description": "marklyft i utegymsställning",
+                "repetitions": [10, 10, 10, 10]
+              },
+              {
+                "id": "o1",
+                "name": "Hänga i ställning",
+                "description": "Häng så länge du orkar i ställningen, upp mot max 30 sekunder",
+                "repetitions": [30, 30, 30]
+              },
+              {
+                "id": "o2",
+                "name": "Dips",
+                "description": "dips",
+                "repetitions": [5, 5, 5]
+              },
+              {
+                "id": "a1",
+                "name": "Axelpress",
+                "description": "Axelpress med antingen medhavd vikt eller i ställning",
+                "repetitions": [10, 10, 10]
+              },
+              {
+                "id": "b7",
+                "name": "Tåhävningar",
+                "description": "tåhävningar",
+                "repetitions": [10, 10, 10]
+              },
+              {
+                "id": "h10",
+                "name": "Sidoplanka",
+                "description": "statisk sidoplanka - En gång per sida - i sekunder",
+                "repetitions": [20, 20]
+              },
+              {
+                "id": "h8",
+                "name": "Planka med vrid",
+                "description": "i sekunder - använd en vattenflaska eller annat redskap om du inte har en hantel",
+                "repetitions": [20, 20]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          },
+          {
+            "id": 7,
+            "name": "pass 7",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "bp5",
+                "name": "Armhävningar",
+                "description": "Hela armhävningar - i sekunder",
+                "repetitions": [30, 30, 30, 30]
+              },
+              {
+                "id": "k4",
+                "name": "Knäböj i utegymsställning",
+                "description": "Om du kör i knäböjställning så gör så många du orkar med ställningen och fortsätt kör resten utan vikt ",
+                "repetitions": [10, 10, 10]
+              },
+              {
+                "id": "r1",
+                "name": "hängande drag",
+                "description": "Gör så många du orkar under 30 sekunder",
+                "repetitions": [30, 30]
+              },
+              {
+                "id": "o3",
+                "name": "negativa chins",
+                "description": "Gör så många du orkar under 20 sekunder",
+                "repetitions": [20, 20]
+              },
+              {
+                "id": "u2",
+                "name": "Bulgargiska utfall",
+                "description": "räknas per ben",
+                "repetitions": [8, 8, 8]
+              },
+              {
+                "id": "h6",
+                "name": "Snabba mountainclimbers",
+                "description": "Gör så många du orkar under 20 sekunder",
+                "repetitions": [20, 20, 20]
+              },
+              {
+                "id": "h9",
+                "name": "Armwalks",
+                "description": "Gör så många du orkar under 20 sekunder",
+                "repetitions": [20, 20, 20]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          },
+          {
+            "id": 8,
+            "name": "pass 8",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "o1",
+                "name": "Hänga i ställning",
+                "description": "Häng så länge du orkar i ställningen, upp mot max 30 sekunder",
+                "repetitions": [30, 30, 30]
+              },
+              {
+                "id": "m2",
+                "name": "Marklyft i utegymsställning",
+                "description": "marklyft i utegymsställning",
+                "repetitions": [10, 10, 10, 10]
+              },
+              {
+                "id": "r1",
+                "name": "Hängande drag",
+                "description": "Gör så många du orkar under 30 sekunder",
+                "repetitions": [30, 30, 30]
+              },
+              {
+                "id": "o2",
+                "name": "Dips",
+                "description": "dips",
+                "repetitions": [12, 12, 12]
+              },
+              {
+                "id": "b3",
+                "name": "Benpress",
+                "description": "antingen i ställning eller enbenspress, isf välj en låg höjd och kör högre höjd om det känns stabilt",
+                "repetitions": [10, 10]
+              },
+              {
+                "id": "h4",
+                "name": "Burpees",
+                "description": "Gör så många du orkar under 20 sekunder",
+                "repetitions": [20, 20]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Challenge",
+        "id": 4,
+        "description": "Sista blocket i det här träningsprogrammet är CHALLENGE och det innebär att vi kommer köra intensiva och svettiga träningspass, med lite svårare övningar, lite mer komplicerat, men också roligt och spännande att få utmana sig själv såhär! Det kommer vara mer fokus på att få upp pulsen än att lyfta tungt, så passen kanske kommer gå snabbare att genomföra, och du kan behöva ta med dig lite lättare vikter än tidigare pass.\nPrecis som tidigare pass så kommer jag skriva flera olika alternativ på övningar som ni kan göra beroende på vad ni har för redskap eller vikter på just ert utegym.",
+        "workouts": [
+          {
+            "name": "pass 1",
+            "id": 1,
+            "warmup": {
+              "instruction": "En bra uppvärmningsform är att cykla / jogga till utegymmet, beroende på hur långt du har dit, men 5 minuter lätt konditionsuppvärmning är alltid bra för att få igång kroppen. Har du inte möjlighet att köra uppvärmning på väg till utegymmet så rekommenderar jag att ta fem minuters lugn löpning på plats."
+            },
+            "exercises": [
+              {
+                "id": "k4",
+                "name": "Knäböj i utegymsställning",
+                "description": "Knäböj i utegymsställning",
+                "repetitions": [15, 15, 15, 15, 15]
+              },
+              {
+                "id": "bp2",
+                "name": "Bänkpress i utegymsställning",
+                "description": "Hängande drag",
+                "repetitions": [8, 8, 8, 8, 8]
+              },
+              {
+                "id": "k6",
+                "name": "Enbensknäböj",
+                "description": "Anges per sida",
+                "repetitions": [5, 5, 5]
+              },
+              {
+                "id": "02",
+                "name": "Dips",
+                "description": "dips",
+                "repetitions": [5, 5, 5]
+              },
+              {
+                "id": "o3",
+                "name": "Negativa chins",
+                "description": "Eller testa chins - i sekunder",
+                "repetitions": [20, 20, 20]
+              },
+              {
+                "id": "h9",
+                "name": "Armwalks",
+                "description": "Gör så många du orkar under 20 sekunder",
+                "repetitions": [20, 20, 20]
+              }
+            ],
+            "cooldown": {
+              "instruction": "Nedvarvning är alltid viktigt att genomföra för att få kroppen att slappna av efter ett träningspass, och här finns det många olika övningar man kan göra, beroende på vilka muskler man jobbat mest med och vilken typ av träning man genomfört. Här rekommenderar jag någon form av lugn konditionsträning hem, ex jogging, promenad eller lugn cykling.\nRörlighetsövningar är också bra att göra, fem-tio minuter av övningarna nedan, som antingen kan göras på plats eller hemma."
+            }
+          },
+          {
+            "id": 2,
+            "name": "pass 2",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "k1",
+                "name": "Knäböj med press",
+                "description": "Eller byt till en annan knäböjsvariant om du inte har tillgång till en vikt",
+                "repetitions": [10, 10, 10, 10]
+              },
+              {
+                "id": "r1",
+                "name": "Hängande drag",
+                "description": "Byt till ex latsdrag om du hellre vill göra det och det finns en sån ställning på ditt utegym",
+                "repetitions": [12, 12, 12]
+              },
+              {
+                "id": "b5",
+                "name": "Höftlyft",
+                "description": "6 per ben om du vill köra enbenshöftlyft",
+                "repetitions": [12, 12]
+              },
+              {
+                "id": "u2",
+                "name": "Bulgargiska utfall",
+                "description": "",
+                "repetitions": [5, 5]
+              },
+              {
+                "id": "a1",
+                "name": "Axelpress",
+                "description": "(antingen i ställning eller enbenspress, isf välj en låg höjd och kör högre höjd om det känns stabilt)",
+                "repetitions": [8, 8]
+              },
+              {
+                "id": "h10",
+                "name": "Sidoplanka",
+                "description": "",
+                "repetitions": [20, 20, 20]
+              },
+              {
+                "id": "h11",
+                "name": "Getups",
+                "description": "Gör så många du orkar under 20 sekunder",
+                "repetitions": [20, 20, 20]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          },
+          {
+            "id": 3,
+            "name": "pass 3",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "m2",
+                "name": "Marklyft i utegymsställning",
+                "description": "Kör med hantel om du hellre vill det",
+                "repetitions": [6, 6, 6, 6, 6]
+              },
+              {
+                "id": "bp2",
+                "name": "Bänkpress i utegymsställning",
+                "description": "Antingen bänkpress i utegymsställning om det finns på ditt utegym eller armhävningar (på tå eller på knä) mot en bänk eller på marken",
+                "repetitions": [10, 10, 10, 10]
+              },
+              {
+                "id": "k6",
+                "name": "Enbensknäböj",
+                "description": "Eller byt till en annan knäböjsvariant om du vill",
+                "repetitions": [3, 3, 3, 3, 3]
+              },
+              {
+                "id": "o3",
+                "name": "Negativa chins",
+                "description": "Eller testa chins - i sekunder",
+                "repetitions": [20, 20]
+              },
+              {
+                "id": "h8",
+                "name": "Planka med vrid",
+                "description": "Gör så många du orkar under 20 sekunder",
+                "repetitions": [20, 20]
+              },
+              {
+                "id": "h9",
+                "name": "Armwalks",
+                "description": "Gör så många du orkar under 20 sekunder",
+                "repetitions": [20, 20]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          },
+          {
+            "id": 4,
+            "name": "pass 4",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "r1",
+                "name": "Hängande drag",
+                "description": "Byt till ex latsdrag om du hellre vill göra det och det finns en sån ställning på ditt utegym",
+                "repetitions": [8, 8, 8, 8]
+              },
+              {
+                "id": "a1",
+                "name": "Axelpress",
+                "description": "Axelpress med antingen medhavd vikt eller i ställning",
+                "repetitions": [8, 8, 8, 8]
+              },
+              {
+                "id": "k4",
+                "name": "Knäböj i utegymsställning",
+                "description": "Knäböj i utegymsställning",
+                "repetitions": [12, 12, 12, 12, 12]
+              },
+              {
+                "id": "h9",
+                "name": "Armwalks",
+                "description": "Gör så många du orkar under 20 sekunder",
+                "repetitions": [20, 20, 20]
+              },
+              {
+                "id": "h6",
+                "name": "Snabba mountainclimbers",
+                "description": "Gör så många du orkar under 20 sekunder",
+                "repetitions": [20, 20, 20]
+              },
+              {
+                "id": "h11",
+                "name": "Getups",
+                "description": "Gör så många du orkar under 20 sekunder",
+                "repetitions": [20, 20, 20]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          },
+          {
+            "id": 5,
+            "name": "pass 5",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "k1",
+                "name": "Knäböj med press",
+                "description": "Eller byt till en annan knäböjsvariant om du inte har tillgång till en vikt",
+                "repetitions": [8, 8]
+              },
+              {
+                "id": "bp2",
+                "name": "Bänkpress i utegymsställning",
+                "description": "Antingen bänkpress i utegymsställning om det finns på ditt utegym eller armhävningar (på tå eller på knä) mot en bänk eller på marken",
+                "repetitions": [8, 8, 8, 8, 8]
+              },
+              {
+                "id": "b7",
+                "name": "Tåhävningar",
+                "description": "tåhävningar",
+                "repetitions": [10, 10]
+              },
+              {
+                "id": "03",
+                "name": "negativa chins",
+                "description": "Eller testa chins - i sekunder",
+                "repetitions": [20, 20, 20]
+              },
+              {
+                "id": "o2",
+                "name": "Dips",
+                "description": "dips",
+                "repetitions": [6, 6, 6, 6]
+              },
+              {
+                "id": "h12",
+                "name": "Diagonal fällkniv",
+                "description": "Gör så många du orkar under 20 sekunder",
+                "repetitions": [20, 20, 20]
+              },
+              {
+                "id": "h2",
+                "name": "Walk in walk out plank",
+                "description": "Gör så många du orkar under 20 sekunder",
+                "repetitions": [20, 20, 20]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          },
+          {
+            "id": 6,
+            "name": "pass 6",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "m2",
+                "name": "Marklyft i utegymsställning",
+                "description": "Kör med hantlar eller i markställning på ditt utegym",
+                "repetitions": [10, 10, 10, 10]
+              },
+              {
+                "id": "b5",
+                "name": "Höftlyft",
+                "description": "6 per ben om du vill köra enbenshöftlyft",
+                "repetitions": [12, 12, 12]
+              },
+              {
+                "id": "r1",
+                "name": "Hängande drag",
+                "description": "Byt till ex latsdrag om du hellre vill göra det och det finns en sån ställning på ditt utegym",
+                "repetitions": [10, 10]
+              },
+              {
+                "id": "u2",
+                "name": "Bulgargiska utfall",
+                "description": "räknas per ben",
+                "repetitions": [6, 6, 6, 6]
+              },
+              {
+                "id": "h9",
+                "name": "Armwalks",
+                "description": "Gör så många du orkar under 20 sekunder",
+                "repetitions": [20, 20]
+              },
+              {
+                "id": "h3",
+                "name": "Rörlighetsmountainclimbers",
+                "description": "Rörlighetsmountainclimbers - i sekunder",
+                "repetitions": [20, 20]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          },
+          {
+            "id": 7,
+            "name": "pass 7",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "k4",
+                "name": "Knäböj i utegymsställning",
+                "description": "Kör du i ställning så kan du precis som tidigare köra så många du orkar i ställningen och sen fortsätta göra resten av setet bredvid utan vikt.",
+                "repetitions": [15, 15, 15, 15, 15]
+              },
+              {
+                "id": "bp2",
+                "name": "Bänkpress i utegymsställning",
+                "description": "Antingen bänkpress i utegymsställning om det finns på ditt utegym eller armhävningar (på tå eller på knä) mot en bänk eller på marken",
+                "repetitions": [8, 8, 8]
+              },
+              {
+                "id": "o3",
+                "name": "negativa chins",
+                "description": "Eller testa chins - i sekunder",
+                "repetitions": [20, 20]
+              },
+              {
+                "id": "a1",
+                "name": "Axelpress",
+                "description": "Axelpress med antingen medhavd vikt eller i ställning",
+                "repetitions": [10, 10, 10]
+              },
+              {
+                "id": "b4",
+                "name": "Enbenspress",
+                "description": "enbenspress - räknas per ben",
+                "repetitions": [4, 4, 4, 4]
+              },
+              {
+                "id": "h12",
+                "name": "Diagonal fällkniv",
+                "description": "Gör så många du orkar under 20 sekunder",
+                "repetitions": [20, 20]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          },
+          {
+            "id": 8,
+            "name": "pass 8",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "m2",
+                "name": "Marklyft i utegymsställning",
+                "description": "Kör med hantlar eller i markställning på ditt utegym",
+                "repetitions": [6, 6, 6, 6, 6]
+              },
+              {
+                "id": "r1",
+                "name": "Hängande drag",
+                "description": "Byt till ex latsdrag om du hellre vill göra det och det finns en sån ställning på ditt utegym",
+                "repetitions": [10, 10, 10]
+              },
+              {
+                "id": "k1",
+                "name": "Knäböj med press",
+                "description": "Eller byt till en annan knäböjsvariant om du inte har tillgång till en vikt",
+                "repetitions": [10, 10, 10]
+              },
+              {
+                "id": "u2",
+                "name": "Bulgargiska utfall",
+                "description": "räknas per ben",
+                "repetitions": [5, 5, 5, 5]
+              },
+              {
+                "id": "h2",
+                "name": "Walk in walk out plank",
+                "description": "Gör så många du orkar under 30 sekunder",
+                "repetitions": [30, 30, 30]
+              },
+              {
+                "id": "h8",
+                "name": "Planka med vrid",
+                "description": "Gör så många du orkar under 30 sekunder",
+                "repetitions": [30, 30, 30]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          }
+        ]
+      },
+      {
+        "name": "Avslut",
+        "id": 5,
+        "description": "Avslutande del",
+        "workouts": [
+          {
+            "name": "Tack för denna gången",
+            "id": 1,
+            "description": "Bra jobbat, Outdoor Queen!\nEtt stort BRA JOBBAT till dig, vår fantastiska Outdoor Queen. Du har gjort otroliga framsteg och visat ditt engagemang för din hälsa och välmående.\nNästa steg – SH BOOTCAMP:\nOm du är hungrig på mer äventyr och utmaningar, tveka inte att utforska våra andra träningsprogram, ex SH BOOTCAMP. Det är ett träningsprogram för dig som vill köra ännu mer crossfit-inspirerad träning.\nNästa steg – RUN HAPPY\nTräningsprogrammet RUN HAPPY är för dig som vill köra med löpträning istället! Kanske är det dags att på riktigt komma igång med löpningen? Klart det är. \nKör programmet igen: \nOch glöm inte, Outdoor Queen kommer alltid vara här för dig när du vill återvända till din favoritträning. Kör programmet igen och se hur långt du har kommit sedan din första dag. Fortsätt bygga på din styrka och kondition.\nTack för att du var en del av Outdoor Queen. Vi ser fram emot att följa din fortsatta framgång och hoppas att du fortsätter att inspirera och motivera dig själv samt andra. Du är otrolig!"
+          }
+        ]
+      }
+    ]
+  }
+]

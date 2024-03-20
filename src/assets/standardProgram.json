@@ -1,0 +1,97 @@
+[
+  {
+    "name": "Namn",
+    "id": "ID1",
+    "description": "Info",
+    "time": "3 weeks",
+    "recommendations": "rekommenderar",
+    "category": "beginner",
+    "tags": ["gym"],
+    "user": "peasant",
+    "blocks": [
+      {
+        "name": "Preparations",
+        "id": 1,
+        "workouts": [
+          {
+            "name": "Allt du behöver",
+            "id": "1",
+            "description": "info"
+          }
+        ]
+      },
+      {
+        "name": "Foundation",
+        "id": 2,
+        "description": "info",
+        "workouts": [
+          {
+            "name": "pass 1",
+            "id": 1,
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "b6",
+                "name": "goblet squat",
+                "description": "knäböj med vikt i famnen",
+                "repetitions": [10, 10, 10, 10],
+                "weights": [5, 5, 5, 5]
+              },
+              {
+                "id": "o1",
+                "name": "bröstpress",
+                "description": "liggande bröstpress på bänk med hantlar",
+                "repetitions": [14, 14, 14],
+                "weights": [4, 4, 4]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          },
+          {
+            "id": 2,
+            "name": "pass 2",
+            "warmup": {
+              "instruction": "5-10 min rörlighet"
+            },
+            "exercises": [
+              {
+                "id": "b3",
+                "name": "marklyft",
+                "description": "marklyft med hantlar, kettlebell eller skivstång. Har du möjlighet så ta lite tyngre vikt för varje repetition.",
+                "repetitions": [12, 12, 12, 12, 12],
+                "weights": [10, 10, 10, 10, 10]
+              },
+              {
+                "id": "h1",
+                "name": "Kettlebell swings",
+                "description": "kettlebellswings",
+                "repetitions": [10, 10],
+                "weights": [7, 7]
+              }
+            ],
+            "cooldown": {
+              "instruction": "5-10 min rörlighet"
+            }
+          }
+        ]
+      },
+
+      {
+        "name": "Avslut",
+        "id": 3,
+        "description": "Avslutande del",
+        "workouts": [
+          {
+            "name": "Tack för denna gången",
+            "id": 1,
+            "description": "hejdå"
+          }
+        ]
+      }
+    ]
+  }
+]
