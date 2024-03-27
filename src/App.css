@@ -10,29 +10,11 @@ body,
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color-scheme: light dark;
-
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-
-.backgroundImg {
-  background-image: url('./assets/4.png');
-  background-size: cover;
-  min-height: 100vh;
-  background-position: center;
-  background-attachment: fixed;
-}
-
-.backgroundImg2 {
-  background-image: url('./assets/2.png');
-  background-size: cover;
-  min-height: 100vh;
-  background-position: center;
-  background-attachment: fixed;
 }
 
 @media (prefers-color-scheme: light) {
@@ -78,7 +60,8 @@ body,
   }
 
   .card {
-    background-color: #faa275;
+    border: 1px solid rgba(0, 0, 0, 0.8);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   }
 
   .program h1,
@@ -125,11 +108,12 @@ body,
 
   ul {
     color: #bc4749;
-    background-color: #5e0b15;
+    background-color: #080506;
   }
 
   .card {
-    background-color: #5e0b15;
+    border: 0.8px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0 4px 8px rgba(238, 233, 233, 0.2);
   }
 
   .burger {
@@ -182,8 +166,6 @@ button:focus-visible {
 .card {
   margin: 1em;
   padding: 1em;
-  border: 1px solid rgba(0, 0, 0, 0.8);
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
 }
 
 ul {
@@ -278,6 +260,11 @@ ul {
   padding: 30px;
 }
 
+.moodImg {
+  max-height: 100px;
+  padding: 5px;
+}
+
 @media (max-width: 600px) {
   h1 {
     font-size: 2em;
@@ -305,6 +292,10 @@ ul {
     display: flex;
     z-index: 10;
   }
+
+  .moodImg {
+    max-height: 40px;
+  }
 }
 
 @media (min-width: 601px) and (max-width: 999px) {
@@ -323,6 +314,9 @@ ul {
   .nextworkout h3 {
     padding: 50px;
   }
+  .moodImg {
+    max-height: 60px;
+  }
 }
 
 @media (min-width: 1000px) {
@@ -339,5 +333,8 @@ ul {
   }
   .nextworkout-container {
     justify-content: center;
+  }
+  .moodImg {
+    max-height: 80px;
   }
 }

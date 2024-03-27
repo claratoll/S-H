@@ -4,7 +4,7 @@ import SignUp from './SignUp';
 import useUser from '../features/useUser';
 import Steps from './Steps';
 import MonthlyChallenge from './MonthlyChallenge';
-import UsersGoals from './UsersGoals';
+
 import NextWorkout from './NextWorkout';
 import images from '../assets/images.js';
 import logo from '../assets/logo.png';
@@ -22,7 +22,6 @@ const Start = () => {
           <Steps />
           <NextWorkout />
           <MonthlyChallenge />
-          <UsersGoals />
         </div>
       ) : (
         <div>
@@ -60,7 +59,15 @@ const Start = () => {
               får köra igenom alla program så många gånger du vill.
             </p>
           </div>
-          <div className='program card'>
+          <div
+            className='program card'
+            style={{
+              backgroundImage: `url(${images[2]})`,
+              backgroundRepeat: 'no-repeat',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+            }}
+          >
             <p>
               Varmt välkommen till strongandhappy.se, medlemskapet för dig som
               vill träna för att bli stark!

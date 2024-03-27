@@ -9,10 +9,12 @@ import {
   getDoc,
   deleteDoc,
 } from 'firebase/firestore';
+import { getStorage, ref, getDownloadURL } from 'firebase/storage';
 
 const useData = () => {
   const auth = getAuth(app);
   const firestore = getFirestore(app);
+  const storage = getStorage(app);
 
   const getChallengeData = async () => {
     if (!auth.currentUser) {
@@ -78,6 +80,8 @@ const useData = () => {
     const userSnap = await getDoc(userRef);
     const userData = userSnap.data();
     const stepGoal = userData.stepGoal;
+    const today = new Date();
+    const todayDateString = today.toISOString().split('T')[0];
 
     const collectionRef = collection(
       firestore,
@@ -96,7 +100,18 @@ const useData = () => {
       }
     });
 
-    return { filteredEvents, stepGoal };
+    let moodEvent = null;
+
+    querySnapshot.forEach((doc) => {
+      const event = doc.data();
+      const eventDate = event.date.toDate();
+      const eventDateString = eventDate.toISOString().split('T')[0];
+      if (event.mood && eventDateString === todayDateString) {
+        moodEvent = event.mood;
+      }
+    });
+
+    return { filteredEvents, stepGoal, moodEvent };
   };
 
   const deleteData = async (data) => {
@@ -106,7 +121,6 @@ const useData = () => {
         return;
       }
 
-      // const docId = `${programId}-workouts-${workoutId}`;
       if (data.workoutId && data.programId) {
         const docRef = doc(
           firestore,
@@ -192,8 +206,6 @@ const useData = () => {
       docRef = doc(firestore, 'users', auth.currentUser.uid, 'calendar', docId);
     }
 
-    console.log('data is ', data[title]);
-
     if (!Object.prototype.hasOwnProperty.call(data, title)) {
       console.error(`Field "${title}" is missing in the data object.`);
       return;
@@ -225,8 +237,7 @@ const useData = () => {
 
     const activeDocSnap = await getDoc(activeProgram);
     if (activeDocSnap.exists()) {
-      const activeData = activeDocSnap.data();
-      isActive = activeData.active;
+      isActive = true;
     }
 
     const docRef = doc(
@@ -289,6 +300,38 @@ const useData = () => {
     await setDoc(saveToCalendarDocRef, calendarData, { merge: true });
   };
 
+  const getExerciseInfo = async (exerciseId) => {
+    try {
+      const exercisesRef = collection(firestore, 'exercises');
+      const querySnapshot = await getDocs(exercisesRef);
+
+      let exerciseInfo = null;
+      let imageURL = null;
+
+      for (const doc of querySnapshot.docs) {
+        const data = doc.data();
+        if (data.id === exerciseId) {
+          exerciseInfo = data;
+          if (exerciseInfo.imageLink) {
+            var imageRef = ref(storage, exerciseInfo.imageLink);
+            imageURL = await getDownloadURL(imageRef);
+          }
+          break;
+        }
+      }
+
+      if (exerciseInfo) {
+        return { exerciseInfo, imageURL };
+      } else {
+        console.error('Exercise not found');
+        return null;
+      }
+    } catch (error) {
+      console.error('Error getting exercise info:', error);
+      return null;
+    }
+  };
+
   return {
     getCalendarData,
     updateCalendarData,
@@ -296,6 +339,7 @@ const useData = () => {
     updateData,
     getChallengeData,
     deleteData,
+    getExerciseInfo,
   };
 };
 

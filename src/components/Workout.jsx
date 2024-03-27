@@ -7,12 +7,13 @@ import images from '../assets/images.js';
 import arrowDown from '../assets/arrowdown.png';
 import addImg from '../assets/add.png';
 import deleteImg from '../assets/delete.png';
+import RandomWarmup from './RandomWarmup.jsx';
 
 const Workout = () => {
   const location = useLocation();
   const { workout, programId } = location.state;
   const user = useUser();
-  const { getData, updateData } = useData();
+  const { getData, updateData, getExerciseInfo } = useData();
   const [showInfo, setShowInfo] = useState(
     Array(workout.exercises.length).fill(false)
   );
@@ -20,6 +21,40 @@ const Workout = () => {
   const [userWorkoutInfo, setUserWorkoutInfo] = useState('');
   const [weightsValues, setWeightsValues] = useState([]);
   const [repsValues, setRepsValues] = useState([]);
+  const [imageURL, setImageURL] = useState({});
+
+  useEffect(() => {
+    const exerciseInfo = async () => {
+      try {
+        await Promise.all(
+          workout.exercises.map(async (exercise) => {
+            try {
+              const { imageURL } = await getExerciseInfo(exercise.id);
+
+              console.log('link', imageURL);
+              if (imageURL) {
+                setImageURL((prevImages) => ({
+                  ...prevImages,
+                  [exercise.id]: imageURL,
+                }));
+              } else {
+                setImageURL((prevImages) => ({
+                  ...prevImages,
+                  [exercise.id]: images[4],
+                }));
+              }
+            } catch (error) {
+              console.error('Error fetching exercise data:', error);
+            }
+          })
+        );
+      } catch (error) {
+        console.error('Error fetching exercise data:', error);
+      }
+    };
+
+    exerciseInfo();
+  }, []);
 
   const handleInfoClick = (index) => {
     const newShowInfo = [...showInfo];
@@ -48,16 +83,13 @@ const Workout = () => {
     const newRepsValues = [...repsValues];
     const newWeightsValues = [...weightsValues];
 
-    // Ta bort reps-värdet från repsValues-arrayen
     newRepsValues[exerciseIndex].splice(setIndex, 1);
 
-    // Om weights-värdet finns, ta bort det från weightsValues-arrayen
     if (newWeightsValues[exerciseIndex].length > 0) {
       newWeightsValues[exerciseIndex].splice(setIndex, 1);
       setWeightsValues(newWeightsValues);
     }
 
-    // Uppdatera states med de nya värdena
     setRepsValues(newRepsValues);
   };
 
@@ -114,7 +146,6 @@ const Workout = () => {
               (data) => data.exerciseID === exercise.id
             );
 
-            // Om det finns data, använd den, annars använd defaultvärden
             if (exerciseData) {
               return exerciseData.repetitions.map((rep) => Number(rep));
             } else {
@@ -165,6 +196,7 @@ const Workout = () => {
       <h2>{workout.name}</h2>
       {user ? (
         <>
+          <RandomWarmup initialCountdown={5} />
           <p>{userWorkoutInfo}</p>
           {workout.exercises.map((exercise, index) => {
             return (
@@ -172,7 +204,7 @@ const Workout = () => {
                 <p
                   className='program card'
                   style={{
-                    backgroundImage: `url(${images[exercise.id] || images[4]})`,
+                    backgroundImage: `url(${imageURL[exercise.id]}})`,
                     backgroundRepeat: 'no-repeat',
                     backgroundSize: 'cover',
                     backgroundPosition: 'center',
