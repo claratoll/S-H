@@ -7,6 +7,7 @@ import NextWorkout from './NextWorkout';
 import PremiumPayment from '../payments/PremiumPayment';
 import ManageSubscription from '../payments/ManageSubscription';
 import usePremium from '../features/usePremium';
+import UserMood from './UserMood';
 
 const Profile = () => {
   const auth = getAuth(app);
@@ -82,7 +83,7 @@ const Profile = () => {
               </div>
             )}
           </div>
-          <p className='card'>Hur mår du idag?</p>
+          <UserMood />
           <NextWorkout />
           <CalendarView />
           <div className='card'>

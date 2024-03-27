@@ -7,16 +7,18 @@ import images from '../assets/images.js';
 import { Link } from 'react-router-dom';
 
 const NextWorkout = () => {
-  const { getData } = useData(); //hämtar från firebase
+  const { getData } = useData();
   const [nextWorkouts, setNextWorkouts] = useState([]);
   const [loading, setLoading] = useState(true);
 
   const getAllWorkoutsFromFirebase = async () => {
-    let tempNextWorkouts = []; // Skapar en temporär array
+    let tempNextWorkouts = [];
+
     for (const program of workoutPrograms) {
       let nextWorkoutFound = false;
       for (const block of program.blocks) {
         if (nextWorkoutFound) break;
+
         for (const workout of block.workouts) {
           const firebaseWorkout = await getData(
             program.id.toString(),

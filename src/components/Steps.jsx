@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 import '../App.css';
 import { useState, useEffect } from 'react';
 import useData from '../features/useData';
@@ -14,7 +15,6 @@ const Steps = () => {
   const [showEdit, setShowEdit] = useState(false);
 
   useEffect(() => {
-    // Anropa funktionen för att hämta kalenderdata när komponenten mountas
     fetchTodaysSteps();
   }, []);
 

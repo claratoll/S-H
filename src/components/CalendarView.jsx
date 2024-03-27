@@ -18,7 +18,6 @@ const CalendarView = () => {
   const [isEditing, setIsEditing] = useState([]);
 
   const handleDayClick = (value) => {
-    console.log('Selected date:', value);
     setSelectedDate(value);
   };
 
@@ -63,7 +62,7 @@ const CalendarView = () => {
             }
             return data;
           });
-          console.log('All events:', newEvents);
+
           setEvents(newEvents);
         },
         (error) => {
@@ -90,7 +89,7 @@ const CalendarView = () => {
 
   const handleDelete = async (index) => {
     const eventData = selectedDateEvent[index];
-    console.log(eventData);
+
     await deleteData(eventData);
 
     setIsEditing((prevIsEditing) => {

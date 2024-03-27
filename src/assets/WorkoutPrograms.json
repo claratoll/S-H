@@ -28,7 +28,7 @@
                 "weights": [10, 12, 10, 7]
               },
               {
-                "id": 3,
+                "id": "h6",
                 "name": "Mountain Climbers",
                 "description": "Förbättrar uthållighet och styrka i hela kroppen.",
                 "repetitions": [8, 8, 8],
@@ -41,7 +41,7 @@
             "name": "Benstyrka",
             "exercises": [
               {
-                "id": 4,
+                "id": "k7",
                 "name": "Squats",
                 "description": "Bygger styrka i benen och förbättrar balansen.",
                 "repetitions": [8, 8, 8],
@@ -81,7 +81,7 @@
                 "repetitions": [8, 8, 8]
               },
               {
-                "id": 9,
+                "id": "a4",
                 "name": "Bicep Curls",
                 "description": "Tränar bicepsmusklerna för ökad armstyrka.",
                 "repetitions": [8, 8, 8],
@@ -341,7 +341,7 @@
             "name": "Cool Down",
             "exercises": [
               {
-                "id": 13,
+                "id": "u1",
                 "name": "Walking Lunges",
                 "description": "Hjälper till att sänka hjärtfrekvensen och sträcker ut benen.",
                 "repetitions": [8, 8, 8],

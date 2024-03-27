@@ -6,11 +6,9 @@ const useAuthListener = (callback) => {
 
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (user) => {
-      // Användaren är antingen inloggad (user !== null) eller utloggad (user === null)
       callback(user);
     });
 
-    // Avbryt lyssnaren när komponenten avmonteras
     return () => unsubscribe();
   }, [auth, callback]);
 };
