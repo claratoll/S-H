@@ -1,3 +1,5 @@
+publicerad sh.strongandhappy.se
+
 Examensarbete
 Designplanering:
 ![image](https://github.com/claratoll/S-H/assets/43537329/187e95b8-6f05-4f1a-b6b7-87469c3f4d20)
